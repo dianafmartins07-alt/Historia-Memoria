@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Memória Histórica</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
         header {
             background-color: #263238;
             color: white;
-            padding: 25px;
+            padding: 30px;
             text-align: center;
         }
 
@@ -36,7 +37,12 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 15px;
+            margin: 12px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #D8BFA3;
         }
 
         .intro {
@@ -48,11 +54,23 @@
             font-size: 35px;
         }
 
+        .intro p {
+            font-size: 17px;
+        }
+
+        .secao {
+            padding: 30px;
+        }
+
+        .secao h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
         .temas {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
             gap: 20px;
-            padding: 30px;
         }
 
         .cartao {
@@ -61,10 +79,20 @@
             border-radius: 10px;
             border-left: 5px solid #A33A32;
             box-shadow: 0 3px 10px #00000010;
+            transition: transform 0.2s;
+        }
+
+        .cartao:hover {
+            transform: translateY(-5px);
         }
 
         .cartao h3 {
             color: #263238;
+            font-family: 'Merriweather', serif;
+        }
+
+        .cartao p {
+            line-height: 1.6;
         }
 
         footer {
@@ -72,6 +100,18 @@
             color: white;
             text-align: center;
             padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .intro h2 {
+                font-size: 26px;
+            }
         }
     </style>
 </head>
@@ -85,7 +125,8 @@
 
 <nav>
     <a href="#inicio">Início</a>
-    <a href="#historia">História</a>
+    <a href="#portugal">História de Portugal</a>
+    <a href="#mundo">História Mundial</a>
     <a href="#pesquisa">Pesquisa</a>
     <a href="#quiz">Quiz</a>
 </nav>
@@ -93,46 +134,83 @@
 <section class="intro" id="inicio">
     <h2>Conhecer o passado</h2>
     <p>Explora diferentes acontecimentos e períodos históricos.</p>
+    <p>Um espaço dedicado ao estudo e à memória da História.</p>
 </section>
 
-<section id="historia">
-    <h2 style="text-align:center;">Temas históricos</h2>
+<section class="secao" id="portugal">
+
+    <h2>História de Portugal</h2>
 
     <div class="temas">
+
         <div class="cartao">
-            <h3>Holocausto</h3>
-            <p>Conteúdo histórico em construção.</p>
+            <h3>1.ª Dinastia — Afonsina</h3>
+            <p>1128–1383</p>
+            <p>O início e a consolidação do Reino de Portugal.</p>
         </div>
 
         <div class="cartao">
-            <h3>Josef Mengele</h3>
-            <p>Conteúdo histórico em construção.</p>
+            <h3>2.ª Dinastia — Avis</h3>
+            <p>1385–1580</p>
+            <p>A Dinastia de Avis e a expansão portuguesa.</p>
         </div>
 
         <div class="cartao">
-            <h3>Lebensborn</h3>
-            <p>Conteúdo histórico em construção.</p>
+            <h3>3.ª Dinastia — Filipina</h3>
+            <p>1580–1640</p>
+            <p>Portugal sob os reis da dinastia espanhola.</p>
         </div>
 
         <div class="cartao">
-            <h3>Ku Klux Klan</h3>
-            <p>Conteúdo histórico em construção.</p>
+            <h3>4.ª Dinastia — Bragança</h3>
+            <p>1640–1910</p>
+            <p>A restauração da independência e a monarquia portuguesa.</p>
+        </div>
+
+        <div class="cartao">
+            <h3>Época dos Descobrimentos</h3>
+            <p>Séculos XV e XVI</p>
+            <p>A expansão marítima portuguesa e as viagens oceânicas.</p>
         </div>
 
         <div class="cartao">
             <h3>Estado Novo</h3>
-            <p>Conteúdo histórico em construção.</p>
+            <p>1933–1974</p>
+            <p>A ditadura portuguesa, a repressão e a resistência.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="secao" id="mundo">
+
+    <h2>História Mundial</h2>
+
+    <div class="temas">
+
+        <div class="cartao">
+            <h3>Primeira Guerra Mundial</h3>
+            <p>1914–1918</p>
+            <p>O conflito internacional que transformou a Europa.</p>
         </div>
 
         <div class="cartao">
-            <h3>Escravidão</h3>
-            <p>Conteúdo histórico em construção.</p>
+            <h3>Segunda Guerra Mundial</h3>
+            <p>1939–1945</p>
+            <p>O conflito mundial e as suas consequências.</p>
         </div>
+
+        <div class="cartao">
+            <h3>Guerra Fria</h3>
+            <p>1947–1991</p>
+            <p>A rivalidade política, militar e ideológica entre duas superpotências.</p>
+        </div>
+
     </div>
 </section>
 
 <footer>
-    <p>Projeto escolar de História</p>
+    <p>Memória Histórica | Projeto escolar</p>
 </footer>
 
 </body>
