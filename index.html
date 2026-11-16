@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -73,6 +72,7 @@ input {
     background: white;
     padding: 25px;
     border-radius: 8px;
+    line-height: 1.7;
 }
 
 button {
@@ -148,8 +148,8 @@ footer {
 const temas = [
 
 {
-    titulo: "1.ª Dinastia Portuguesa – Dinastia de Borgonha",
-    texto: `
+titulo: "1.ª Dinastia Portuguesa – Dinastia de Borgonha",
+texto: `
 <h3>1.ª Dinastia Portuguesa – Dinastia de Borgonha</h3>
 
 <p>A Primeira Dinastia Portuguesa, também conhecida como Dinastia de Borgonha, começou em 1143, com o reconhecimento da independência de Portugal pelo Tratado de Zamora, e terminou em 1383–1385, com a crise de sucessão que conduziu à subida ao trono de D. João I, iniciando a Dinastia de Avis.</p>
@@ -184,43 +184,126 @@ const temas = [
 },
 
 {
-    titulo: "2.ª Dinastia Portuguesa – Dinastia de Avis",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "2.ª Dinastia Portuguesa – Dinastia de Avis",
+texto: `
+<h3>2.ª Dinastia Portuguesa – Dinastia de Avis (1385–1580)</h3>
+
+<p>A 2.ª Dinastia Portuguesa, também conhecida como Dinastia de Avis, começou em 1385, com a subida ao trono de D. João I, e terminou em 1580, com a crise de sucessão provocada pela morte do Cardeal-Rei D. Henrique.</p>
+
+<h3>1. O início da 2.ª Dinastia</h3>
+
+<p>A Dinastia de Avis teve origem na Crise de 1383–1385, iniciada após a morte de D. Fernando I, sem deixar um filho varão legítimo. A sua filha, D. Beatriz, era casada com o rei de Castela, o que provocou o receio de Portugal perder a independência.</p>
+
+<p>D. João, Mestre de Avis, liderou a resistência contra Castela e foi escolhido rei nas Cortes de Coimbra, em 1385. A 14 de agosto desse ano, os portugueses venceram a Batalha de Aljubarrota, com a liderança de D. João I e D. Nuno Álvares Pereira. Esta vitória garantiu a independência portuguesa.</p>
+
+<h3>2. Os reis da 2.ª Dinastia</h3>
+
+<h4>D. João I – O de Boa Memória (1385–1433)</h4>
+<p>Foi o primeiro rei da segunda dinastia. Procurou consolidar a independência de Portugal e fortalecer a monarquia. Em 1386, assinou o Tratado de Windsor com Inglaterra e, em 1387, casou com D. Filipa de Lencastre. Os seus filhos ficaram conhecidos como a Ínclita Geração. Em 1415, conquistou Ceuta, dando início à expansão portuguesa além-mar.</p>
+
+<h4>D. Duarte – O Eloquente (1433–1438)</h4>
+<p>Filho de D. João I e D. Filipa de Lencastre, ficou conhecido pela sua cultura e pelos seus escritos. Em 1437, organizou uma expedição para conquistar Tânger, mas esta terminou numa derrota. O seu irmão, D. Fernando, ficou prisioneiro e morreu em cativeiro. D. Duarte escreveu obras como o Leal Conselheiro.</p>
+
+<h4>D. Afonso V – O Africano (1438–1481)</h4>
+<p>Subiu ao trono ainda criança. Durante o seu reinado, ocorreram conflitos políticos, incluindo a Batalha de Alfarrobeira, em 1449, na qual D. Pedro morreu. Ficou conhecido como O Africano devido às conquistas portuguesas no Norte de África, como Alcácer Ceguer, Arzila e Tânger. Em 1479, foi assinado o Tratado de Alcáçovas com Castela.</p>
+
+<h4>D. João II – O Príncipe Perfeito (1481–1495)</h4>
+<p>Procurou reforçar o poder do rei e diminuir a influência da grande nobreza. Durante o seu reinado, Bartolomeu Dias dobrou o Cabo da Boa Esperança, em 1488, abrindo caminho para a chegada à Índia por via marítima. Em 1494, foi assinado o Tratado de Tordesilhas entre Portugal e Castela.</p>
+
+<h4>D. Manuel I – O Venturoso (1495–1521)</h4>
+<p>O seu reinado ficou marcado pela expansão marítima e pelo crescimento do comércio. Em 1498, Vasco da Gama chegou à Índia e, em 1500, Pedro Álvares Cabral chegou ao território que atualmente conhecemos como Brasil. Os portugueses também conquistaram Goa, em 1510, e Malaca, em 1511. Durante este período desenvolveu-se o Estilo Manuelino. Em 1521, foram publicadas as Ordenações Manuelinas.</p>
+
+<h4>D. João III – O Piedoso (1521–1557)</h4>
+<p>Durante o seu reinado, continuou a expansão do império português, especialmente no Brasil e no Oriente. Em 1534, foram criadas as Capitanias Hereditárias no Brasil e, em 1549, o Governo-Geral. Em 1536, foi estabelecida a Inquisição em Portugal. Em 1537, a Universidade foi transferida definitivamente para Coimbra.</p>
+
+<h4>D. Sebastião – O Desejado (1557–1578)</h4>
+<p>Subiu ao trono ainda criança e começou a governar pessoalmente em 1568. Tinha grande interesse pela expansão militar no Norte de África. Em 1578, organizou uma expedição que terminou na Batalha de Alcácer Quibir, onde o exército português foi derrotado. D. Sebastião desapareceu e nunca foi encontrado o seu corpo. Surgiu assim o Sebastianismo, uma crença no seu possível regresso.</p>
+
+<h4>D. Henrique – O Casto (1578–1580)</h4>
+<p>Era tio-avô de D. Sebastião e tornou-se rei após o seu desaparecimento. Não teve descendentes e tentou resolver o problema da sucessão. A sua morte, em 1580, provocou uma nova crise, com vários candidatos ao trono português.</p>
+
+<h3>3. A crise de sucessão de 1580</h3>
+
+<p>Após a morte de D. Henrique, os principais candidatos ao trono eram Filipe II de Espanha, D. António, Prior do Crato, e D. Catarina, Duquesa de Bragança.</p>
+
+<p>Filipe II pretendia conquistar a coroa portuguesa e enviou um exército comandado pelo Duque de Alba. A 25 de agosto de 1580, aconteceu a Batalha de Alcântara, onde as forças de D. António foram derrotadas.</p>
+
+<p>Em 1581, nas Cortes de Tomar, Filipe II de Espanha foi reconhecido como Filipe I de Portugal. Começou assim a 3.ª Dinastia, também conhecida como Dinastia Filipina, e o período da União Ibérica.</p>
+
+<h3>4. Os principais acontecimentos e datas</h3>
+
+<ul>
+<li>1385 – Cortes de Coimbra e Batalha de Aljubarrota.</li>
+<li>1386 – Tratado de Windsor.</li>
+<li>1415 – Conquista de Ceuta.</li>
+<li>1419 – Descoberta da Madeira.</li>
+<li>1434 – Gil Eanes ultrapassa o Cabo Bojador.</li>
+<li>1437 – Tentativa falhada de conquista de Tânger.</li>
+<li>1449 – Batalha de Alfarrobeira.</li>
+<li>1458 – Conquista de Alcácer Ceguer.</li>
+<li>1471 – Conquista de Arzila e Tânger.</li>
+<li>1479 – Tratado de Alcáçovas.</li>
+<li>1488 – Bartolomeu Dias dobra o Cabo da Boa Esperança.</li>
+<li>1494 – Tratado de Tordesilhas.</li>
+<li>1497 – Partida de Vasco da Gama para a Índia.</li>
+<li>1498 – Chegada de Vasco da Gama à Índia.</li>
+<li>1500 – Chegada de Pedro Álvares Cabral ao Brasil.</li>
+<li>1510 – Conquista de Goa.</li>
+<li>1511 – Conquista de Malaca.</li>
+<li>1521 – Publicação das Ordenações Manuelinas.</li>
+<li>1534 – Criação das Capitanias Hereditárias.</li>
+<li>1536 – Estabelecimento da Inquisição em Portugal.</li>
+<li>1537 – Transferência da Universidade para Coimbra.</li>
+<li>1540 – Chegada da Companhia de Jesus a Portugal.</li>
+<li>1549 – Criação do Governo-Geral do Brasil.</li>
+<li>1578 – Batalha de Alcácer Quibir.</li>
+<li>1580 – Morte de D. Henrique e crise de sucessão.</li>
+<li>1581 – Cortes de Tomar e reconhecimento de Filipe I como rei de Portugal.</li>
+</ul>
+
+<h3>5. A importância da 2.ª Dinastia para Portugal</h3>
+
+<p>A Dinastia de Avis foi um dos períodos mais importantes da História portuguesa, principalmente devido à Expansão Marítima e aos Descobrimentos.</p>
+
+<p>Portugal tornou-se uma das principais potências marítimas da Europa, estabelecendo rotas comerciais com África, a Ásia e a América. Desenvolveram-se o comércio, a cultura, a arquitetura e as relações diplomáticas.</p>
+
+<p>No entanto, a manutenção do império tornou-se cada vez mais difícil e dispendiosa. A morte de D. Sebastião e de D. Henrique, sem deixarem herdeiros, provocou uma crise de sucessão que terminou com a subida ao trono de Filipe I de Portugal, em 1581.</p>
+`
 },
 
 {
-    titulo: "3.ª Dinastia Portuguesa – Dinastia Filipina",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "3.ª Dinastia Portuguesa – Dinastia Filipina",
+texto: "<p>Conteúdo por adicionar.</p>"
 },
 
 {
-    titulo: "4.ª Dinastia Portuguesa – Dinastia de Bragança",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "4.ª Dinastia Portuguesa – Dinastia de Bragança",
+texto: "<p>Conteúdo por adicionar.</p>"
 },
 
 {
-    titulo: "Época dos Descobrimentos",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "Época dos Descobrimentos",
+texto: "<p>Conteúdo por adicionar.</p>"
 },
 
 {
-    titulo: "Estado Novo",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "Estado Novo",
+texto: "<p>Conteúdo por adicionar.</p>"
 },
 
 {
-    titulo: "Primeira Guerra Mundial",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "Primeira Guerra Mundial",
+texto: "<p>Conteúdo por adicionar.</p>"
 },
 
 {
-    titulo: "Segunda Guerra Mundial",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "Segunda Guerra Mundial",
+texto: "<p>Conteúdo por adicionar.</p>"
 },
 
 {
-    titulo: "Guerra Fria",
-    texto: "<p>Conteúdo por adicionar.</p>"
+titulo: "Guerra Fria",
+texto: "<p>Conteúdo por adicionar.</p>"
 }
 
 ];
@@ -238,6 +321,8 @@ function abrirTema(numero) {
     document.getElementById("artigo").style.display = "block";
     document.getElementById("tituloArtigo").innerHTML = temas[numero].titulo;
     document.getElementById("textoArtigo").innerHTML = temas[numero].texto;
+
+    window.scrollTo(0, 0);
 }
 
 function pesquisarTemas() {
