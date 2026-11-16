@@ -104,6 +104,15 @@
             background: #822D27;
         }
 
+        #pesquisa {
+            padding: 12px;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
         #artigo {
             background: white;
             padding: 30px;
@@ -147,6 +156,17 @@
 </nav>
 
 <main>
+
+    <!-- PESQUISA DE TEMAS -->
+
+    <div style="text-align:center; margin-bottom:25px;">
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar tema histórico..."
+            onkeyup="pesquisarTemas()"
+        >
+    </div>
 
     <!-- LISTA DE TEMAS -->
 
@@ -311,7 +331,33 @@
 
         document.getElementById("listaTemas").classList.remove("escondido");
 
+        document.getElementById("pesquisa").value = "";
+
+        pesquisarTemas();
+
         window.scrollTo(0, 0);
+    }
+
+    // Função para pesquisar temas
+
+    function pesquisarTemas() {
+
+        let pesquisa = document.getElementById("pesquisa").value.toLowerCase();
+
+        let cartoes = document.querySelectorAll(".cartao");
+
+        cartoes.forEach(function(cartao) {
+
+            let texto = cartao.textContent.toLowerCase();
+
+            if (texto.includes(pesquisa)) {
+                cartao.style.display = "block";
+            } else {
+                cartao.style.display = "none";
+            }
+
+        });
+
     }
 
 </script>
