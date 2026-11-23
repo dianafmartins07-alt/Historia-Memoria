@@ -6,202 +6,165 @@
 <title>Memória Histórica</title>
 
 <style>
-* { 
-#comentarios {
-    background: #252525;
-    border: 1px solid #9b7953;
-    border-radius: 8px;
-    padding: 25px;
-    margin-top: 40px;
-}
-
-#comentarios h2 {
-    color: #d4b58c;
-    text-align: center;
-}
-
-#comentarios p {
-    color: #bbb;
-    text-align: center;
-}
-
-.giscus {
-    margin-top: 25px;
-}
-
+* {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Georgia, serif;
-    background: #171717;
-    color: #eee;
+    font-family: Arial, sans-serif;
+    background: #f4f1ea;
+    color: #263238;
 }
 
 header {
+    background: #263238;
+    color: white;
     text-align: center;
-    padding: 55px 20px;
-    background: #252525;
-    border-bottom: 2px solid #9b7953;
+    padding: 35px 20px;
 }
 
 header h1 {
-    color: #d4b58c;
+    margin: 0;
     font-size: 38px;
 }
 
 header p {
-    color: #bbb;
+    margin-bottom: 0;
 }
 
-<section id="comentarios">
-
-    <h2>Comentários e Sugestões</h2>
-
-    <p>
-        Tens alguma sugestão para o Memória Histórica?
-        Queres recomendar uma época histórica ou deixar
-        a tua opinião sobre o site?
-    </p>
-
-    <p>
-        Partilha as tuas ideias connosco!
-    </p>
-
-    <div class="giscus"></div>
-
-    <script src="https://giscus.app/client.js"
-        data-repo="O-TEU-UTILIZADOR/Historia-Memoria"
-        data-repo-id="COLOCA_AQUI_O_REPO_ID"
-        data-category="General"
-        data-category-id="COLOCA_AQUI_O_CATEGORY_ID"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="dark"
-        data-lang="pt"
-        crossorigin="anonymous"
-        async>
-    </script>
-
-</section>
-
-main { 
-    max-width: 1100px;
-    margin: auto;
-    padding: 30px 20px;
-}
-
-h2 {
-    color: #d4b58c;
+nav {
+    background: #a33a32;
+    padding: 15px;
     text-align: center;
 }
 
-.caixas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-.caixa {
-    background: #292929;
-    border: 1px solid #70583e;
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
     padding: 25px;
-    min-height: 140px;
+}
+
+h2 {
+    color: #a33a32;
+}
+
+.search {
+    margin: 25px 0;
+}
+
+.search input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
     border-radius: 8px;
+    border-left: 5px solid #a33a32;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: 0.2s;
 }
 
-.caixa:hover {
-    background: #39312a;
+.card:hover {
     transform: translateY(-4px);
 }
 
-.caixa h3 {
-    color: #d4b58c;
-}
-
-.caixa p {
-    color: #bbb;
-}
-
-#artigo {
-    display: none;
-    background: #252525;
-    padding: 25px;
-    margin-top: 35px;
-    border-radius: 8px;
-    border: 1px solid #9b7953;
-}
-
-#artigo h2 {
-    text-align: left;
-}
-
-#textoArtigo {
-    white-space: pre-wrap;
-    line-height: 1.8;
-}
-
-#imagemArtigo {
-    max-width: 100%;
-    max-height: 400px;
-    display: none;
-    margin: 20px auto;
-    border-radius: 8px;
+.card h3 {
+    color: #a33a32;
+    margin-top: 0;
 }
 
 button {
-    background: #9b7953;
+    background: #a33a32;
     color: white;
     border: none;
-    padding: 11px 18px;
-    margin: 8px 5px 8px 0;
-    cursor: pointer;
+    padding: 12px 18px;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
 }
 
 button:hover {
-    background: #765b3c;
+    background: #7d2924;
 }
 
-.editor {
+.voltar {
+    background: #263238;
+}
+
+#artigo, #editor {
     display: none;
-    margin-top: 25px;
-    border-top: 1px solid #70583e;
-    padding-top: 20px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    line-height: 1.7;
+    margin-top: 20px;
 }
 
-input, textarea {
+#artigo h2, #artigo h3 {
+    color: #a33a32;
+}
+
+#artigo img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+#editor input, #editor textarea {
     width: 100%;
     padding: 12px;
-    margin: 8px 0 18px;
-    background: #171717;
-    color: white;
-    border: 1px solid #70583e;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
-textarea {
+#editor textarea {
     min-height: 250px;
-    resize: vertical;
-}
-
-label {
-    color: #d4b58c;
 }
 
 footer {
+    background: #263238;
+    color: white;
     text-align: center;
-    padding: 25px;
-    color: #888;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media(max-width:600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        padding: 15px;
+    }
 }
 </style>
 </head>
@@ -210,181 +173,536 @@ footer {
 
 <header>
     <h1>Memória Histórica</h1>
-    <p>Conhecer o passado para compreender o presente.</p>
+    <p>Um espaço dedicado à História de Portugal e do Mundo</p>
 </header>
+
+<nav>
+    <a href="#inicio">Início</a>
+    <a href="#portugal">História de Portugal</a>
+    <a href="#mundo">História Mundial</a>
+</nav>
 
 <main>
 
-<h2>Épocas Históricas</h2>
-<p style="text-align:center;color:#aaa;">
-    Escolhe um tema para consultar a sua história.
-</p>
+<section id="inicio">
+    <h2>Bem-vindo à Memória Histórica</h2>
 
-<div class="caixas" id="caixas"></div>
+    <p>
+        Este site tem como objetivo apresentar acontecimentos,
+        períodos e figuras importantes da História de Portugal
+        e do Mundo, ajudando a compreender o passado e a sua
+        influência no presente.
+    </p>
+</section>
 
-<section id="artigo">
+<div class="search">
+    <input
+        type="text"
+        id="pesquisa"
+        placeholder="Pesquisar um tema..."
+        onkeyup="pesquisarTemas()"
+    >
+</div>
+
+<section id="portugal">
+    <h2>História de Portugal</h2>
+</section>
+
+<div class="cards" id="listaPortugal"></div>
+
+<section id="mundo">
+    <h2>História Mundial</h2>
+</section>
+
+<div class="cards" id="listaMundo"></div>
+
+<div id="artigo">
+    <button class="voltar" onclick="mostrarLista()">← Voltar aos temas</button>
 
     <h2 id="tituloArtigo"></h2>
 
-    <img id="imagemArtigo" alt="Imagem do artigo">
+    <div id="textoArtigo"></div>
 
-    <p id="textoArtigo"></p>
+    <button onclick="abrirEditor()">✏️ Editar este tema</button>
+</div>
 
-    <button onclick="abrirEditor()">Editar artigo</button>
-    <button onclick="fecharArtigo()">Voltar aos temas</button>
+<div id="editor">
 
-    <div class="editor" id="editor">
+    <h2>Editar tema</h2>
 
-        <h2>Editar conteúdo</h2>
+    <p>
+        Aqui podes escrever, alterar o texto e adicionar uma imagem.
+        As alterações ficam guardadas no teu navegador.
+    </p>
 
-        <label>Título</label>
-        <input type="text" id="campoTitulo">
+    <label><b>Título:</b></label>
+    <input type="text" id="novoTitulo">
 
-        <label>Pequena descrição</label>
-        <input type="text" id="campoResumo">
+    <label><b>Resumo:</b></label>
+    <input type="text" id="novoResumo">
 
-        <label>Link da imagem</label>
-        <input type="text" id="campoImagem"
-        placeholder="Coloca aqui o link da imagem">
+    <label><b>Texto:</b></label>
+    <textarea id="novoTexto"></textarea>
 
-        <label>Texto da história</label>
-        <textarea id="campoTexto"
-        placeholder="Escreve aqui a informação histórica..."></textarea>
+    <label><b>Adicionar imagem:</b></label>
+    <input type="file" id="imagem" accept="image/*">
 
-        <button onclick="guardarArtigo()">Guardar alterações</button>
-        <button onclick="cancelarEdicao()">Cancelar</button>
+    <div id="preview"></div>
 
-    </div>
-</section>
+    <button onclick="guardarAlteracoes()">Guardar alterações</button>
+    <button class="voltar" onclick="cancelarEdicao()">Cancelar</button>
+
+</div>
 
 </main>
 
 <footer>
-    Memória Histórica © 2026
+    <p>Memória Histórica | Projeto Escolar</p>
 </footer>
 
 <script>
 
-const temasIniciais = [
-    "1.ª Dinastia — Borgonha",
-    "2.ª Dinastia — Avis",
-    "3.ª Dinastia — Filipina",
-    "4.ª Dinastia — Bragança",
-    "Estado Novo",
-    "25 de Abril",
-    "Primeira Guerra Mundial",
-    "Segunda Guerra Mundial"
-];
+const temas = [
 
-let artigos = JSON.parse(localStorage.getItem("artigosHistoria")) || {};
+{
+    titulo: "1.ª Dinastia — Dinastia de Borgonha",
+    resumo: "A formação e consolidação do Reino de Portugal.",
+    categoria: "Portugal",
 
-let temaAtual = "";
+    texto: `
+A 1.ª Dinastia de Portugal, também conhecida como Dinastia de Borgonha ou Dinastia Afonsina, foi a primeira dinastia a governar o Reino de Portugal. Teve início com D. Afonso Henriques e terminou em 1383, com a morte de D. Fernando.
 
-function mostrarCaixas() {
+D. Afonso Henriques foi o primeiro rei de Portugal e teve um papel fundamental na formação do reino. Lutou pela independência em relação a Leão e Castela e conquistou vários territórios.
 
-    const caixas = document.getElementById("caixas");
-    caixas.innerHTML = "";
+D. Sancho I ficou conhecido como o Povoador, devido ao seu esforço para desenvolver e povoar o território português.
 
-    temasIniciais.forEach(tema => {
+D. Afonso II deu importância à organização das leis e da administração do reino.
 
-        const artigo = artigos[tema] || {
-            titulo: tema,
-            resumo: "Clica para escrever e consultar este tema."
-        };
+D. Sancho II conquistou várias terras aos Mouros, mas enfrentou conflitos com a Igreja e parte da nobreza.
 
-        const caixa = document.createElement("div");
-        caixa.className = "caixa";
+D. Afonso III conquistou o Algarve, concluindo a conquista do território português.
 
-        const titulo = document.createElement("h3");
-        titulo.textContent = artigo.titulo;
+D. Dinis ficou conhecido como o Rei Lavrador. Desenvolveu a agricultura, o comércio e a cultura. Fundou também a Universidade em 1290.
 
-        const resumo = document.createElement("p");
-        resumo.textContent = artigo.resumo;
+D. Afonso IV participou na Batalha do Salado, em 1340.
 
-        caixa.appendChild(titulo);
-        caixa.appendChild(resumo);
+D. Pedro I ficou conhecido como o Justiceiro e o seu reinado ficou marcado pela história de Inês de Castro.
 
-        caixa.addEventListener("click", () => abrirArtigo(tema));
+D. Fernando foi o último rei da 1.ª Dinastia. A sua morte, em 1383, deu origem à crise de sucessão.
 
-        caixas.appendChild(caixa);
-    });
+A 1.ª Dinastia foi essencial para a formação e consolidação de Portugal como reino independente.
+    `,
+
+    imagem: ""
+},
+
+{
+    titulo: "2.ª Dinastia — Dinastia de Avis",
+    resumo: "A Dinastia de Avis e a expansão portuguesa.",
+    categoria: "Portugal",
+
+    texto: `
+A 2.ª Dinastia de Portugal, também conhecida como Dinastia de Avis, começou em 1385 e terminou em 1580.
+
+Depois da morte de D. Fernando, em 1383, surgiu uma crise de sucessão. D. Beatriz era casada com o rei de Castela, o que levantou o receio de Portugal perder a sua independência.
+
+D. João, Mestre de Avis, foi apoiado por parte da população e da nobreza. Em 1385, foi aclamado rei nas Cortes de Coimbra. Nesse mesmo ano, os portugueses venceram os castelhanos na Batalha de Aljubarrota.
+
+D. João I consolidou a independência portuguesa e iniciou uma nova fase da História do país. Em 1415, conquistou Ceuta, dando início à expansão portuguesa.
+
+D. Duarte teve um reinado curto e ficou marcado pela expedição a Tânger.
+
+D. Afonso V ficou conhecido como o Africano devido às conquistas portuguesas no Norte de África.
+
+D. João II ficou conhecido como o Príncipe Perfeito. Reforçou o poder do rei e apoiou as viagens de exploração.
+
+D. Manuel I ficou conhecido como o Venturoso. Durante o seu reinado, Vasco da Gama chegou à Índia, em 1498, e Pedro Álvares Cabral chegou ao Brasil, em 1500.
+
+D. João III continuou a expansão do Império Português.
+
+D. Sebastião desapareceu na Batalha de Alcácer-Quibir, em 1578, sem deixar descendentes diretos.
+
+D. Henrique morreu em 1580 sem deixar descendentes, provocando uma crise de sucessão.
+
+A Dinastia de Avis ficou marcada pela expansão marítima, pelos Descobrimentos e pelo crescimento do Império Português.
+    `,
+
+    imagem: ""
+},
+
+{
+    titulo: "3.ª Dinastia — Dinastia Filipina",
+    resumo: "A União Ibérica e a Restauração da Independência.",
+    categoria: "Portugal",
+
+    texto: `
+A 3.ª Dinastia de Portugal, também conhecida como Dinastia Filipina, começou em 1580 e terminou em 1640.
+
+Esta dinastia começou depois da crise de sucessão de 1580, provocada pela morte de D. Henrique, que não deixou descendentes. Um dos pretendentes ao trono português era Filipe II de Espanha, neto de D. Manuel I, que conseguiu impor a sua candidatura e tornou-se rei de Portugal com o nome de D. Filipe I.
+
+Durante este período, Portugal e Espanha passaram a ter o mesmo monarca, situação conhecida como União Ibérica. Apesar de partilharem o mesmo rei, os dois reinos mantiveram inicialmente as suas próprias leis, instituições, moeda e administração.
+
+D. Filipe I foi reconhecido como rei nas Cortes de Tomar, em 1581.
+
+D. Filipe II governou entre 1598 e 1621. Durante o seu reinado, os ataques aos territórios portugueses no estrangeiro aumentaram.
+
+D. Filipe III foi o último rei da Dinastia Filipina. Durante o seu reinado, aumentaram os impostos e o descontentamento da população.
+
+A 1 de dezembro de 1640, um grupo de nobres portugueses organizou uma revolta para recuperar a independência.
+
+D. João, Duque de Bragança, foi aclamado rei, passando a chamar-se D. João IV.
+
+A Dinastia Filipina terminou em 1640, marcando a recuperação da independência portuguesa e o início da 4.ª Dinastia.
+    `,
+
+    imagem: ""
+},
+
+{
+    titulo: "4.ª Dinastia — Dinastia de Bragança",
+    resumo: "A recuperação da independência e a Dinastia de Bragança.",
+    categoria: "Portugal",
+
+    texto: `
+A 4.ª Dinastia de Portugal, também conhecida como Dinastia de Bragança, começou em 1640, após a Restauração da Independência, e terminou em 1910, com a implantação da República.
+
+O primeiro rei desta dinastia foi D. João IV, que foi aclamado rei a 1 de dezembro de 1640.
+
+Portugal teve de lutar para defender a sua independência durante a Guerra da Restauração, que durou de 1640 a 1668. A independência foi finalmente reconhecida por Espanha através do Tratado de Lisboa, em 1668.
+
+Durante esta dinastia, Portugal passou por vários acontecimentos importantes, como o desenvolvimento do Império Português, o terramoto de 1755, as invasões francesas, a ida da família real para o Brasil e a Revolução Liberal de 1820.
+
+Em 1822, o Brasil declarou a independência.
+
+Em 1908, o rei D. Carlos e o príncipe herdeiro D. Luís Filipe foram assassinados.
+
+A 5 de outubro de 1910, foi implantada a República Portuguesa, terminando a monarquia e a Dinastia de Bragança.
+    `,
+
+    imagem: ""
+},
+
+{
+    titulo: "Estado Novo",
+    resumo: "O regime político português entre 1933 e 1974.",
+    categoria: "Portugal",
+
+    texto: `
+O Estado Novo foi um regime autoritário que vigorou em Portugal entre 1933 e 1974. Foi associado principalmente a António de Oliveira Salazar.
+
+O regime limitava as liberdades, controlava a imprensa através da censura e não permitia uma oposição política livre.
+
+A polícia política, inicialmente PVDE e posteriormente PIDE/DGS, perseguia opositores ao regime.
+
+A propaganda era utilizada para divulgar os ideais do Estado Novo.
+
+Portugal manteve uma política colonial em África. A partir de 1961, começaram as guerras coloniais, que tiveram consequências económicas, sociais e políticas.
+
+Marcelo Caetano sucedeu a Salazar em 1968.
+
+O Estado Novo terminou com a Revolução de 25 de Abril de 1974.
+    `,
+
+    imagem: ""
+},
+
+{
+    titulo: "25 de Abril de 1974",
+    resumo: "A Revolução dos Cravos e o fim da ditadura.",
+    categoria: "Portugal",
+
+    texto: `
+O 25 de Abril de 1974 foi uma revolução que pôs fim ao Estado Novo e abriu caminho à democracia em Portugal.
+
+A revolução foi organizada pelo Movimento das Forças Armadas (MFA), composto por militares descontentes com o regime.
+
+No dia 25 de Abril, os militares ocuparam pontos estratégicos em Lisboa e derrubaram o governo.
+
+A revolução ficou conhecida como Revolução dos Cravos, porque muitas pessoas colocaram cravos nos uniformes e nas armas dos militares.
+
+Depois do 25 de Abril, foram restauradas as liberdades fundamentais, a censura foi abolida e os presos políticos foram libertados.
+
+Portugal iniciou também o processo de descolonização.
+
+Em 1976, foi aprovada uma nova Constituição e realizaram-se eleições democráticas.
+    `,
+
+    imagem: ""
+},
+
+{
+    titulo: "Primeira Guerra Mundial",
+    resumo: "O conflito mundial entre 1914 e 1918.",
+    categoria: "Mundo",
+
+    texto: `
+A Primeira Guerra Mundial decorreu entre 1914 e 1918 e envolveu várias potências mundiais.
+
+Entre as principais causas estavam o nacionalismo, o imperialismo, as rivalidades entre países, as alianças militares e a corrida aos armamentos.
+
+O assassinato do arquiduque Francisco Fernando, em Sarajevo, a 28 de junho de 1914, desencadeou uma crise que levou ao início da guerra.
+
+Os principais blocos eram os Aliados e as Potências Centrais.
+
+A guerra foi marcada pelas trincheiras, pela utilização de novas armas e por enormes perdas humanas.
+
+Portugal participou na guerra ao lado dos Aliados.
+
+A guerra terminou a 11 de novembro de 1918, com a assinatura do armistício.
+
+Em 1919, foi assinado o Tratado de Versalhes, que estabeleceu as condições de paz e impôs duras medidas à Alemanha.
+    `,
+
+    imagem: ""
+},
+
+{
+    titulo: "Segunda Guerra Mundial",
+    resumo: "O conflito mundial entre 1939 e 1945.",
+    categoria: "Mundo",
+
+    texto: `
+A Segunda Guerra Mundial decorreu entre 1939 e 1945 e foi um dos conflitos mais devastadores da História.
+
+Entre as causas estavam o expansionismo alemão, o nazismo, o fascismo, o militarismo japonês e as consequências da Primeira Guerra Mundial.
+
+A guerra começou na Europa a 1 de setembro de 1939, quando a Alemanha invadiu a Polónia.
+
+Os principais blocos eram os Aliados e as Potências do Eixo.
+
+Durante a guerra ocorreram grandes batalhas na Europa, África, Ásia e no Pacífico.
+
+O regime nazi perseguiu e assassinou milhões de pessoas, incluindo seis milhões de judeus no Holocausto.
+
+Em 1945, a Alemanha foi derrotada. A guerra terminou após a rendição do Japão.
+
+O conflito provocou milhões de mortes e transformou profundamente o mundo.
+
+Depois da guerra, foi criada a Organização das Nações Unidas (ONU), em 1945, com o objetivo de promover a paz e a cooperação internacional.
+    `,
+
+    imagem: ""
 }
 
-function abrirArtigo(tema) {
+];
 
-    temaAtual = tema;
+// Criar cartões dos temas
 
-    const artigo = artigos[tema] || {
-        titulo: tema,
-        resumo: "",
-        texto: "",
-        imagem: ""
-    };
+function criarCards() {
 
-    document.getElementById("tituloArtigo").textContent = artigo.titulo;
-    document.getElementById("textoArtigo").textContent =
-        artigo.texto || "Ainda não existe informação neste artigo.";
+    const portugal = document.getElementById("listaPortugal");
+    const mundo = document.getElementById("listaMundo");
 
-    const imagem = document.getElementById("imagemArtigo");
+    portugal.innerHTML = "";
+    mundo.innerHTML = "";
 
-    if (artigo.imagem) {
-        imagem.src = artigo.imagem;
-        imagem.style.display = "block";
-    } else {
-        imagem.style.display = "none";
-    }
+    temas.forEach((tema, numero) => {
+
+        const cartao = document.createElement("div");
+
+        cartao.className = "card";
+
+        cartao.innerHTML = `
+            <h3>${tema.titulo}</h3>
+            <p>${tema.resumo}</p>
+        `;
+
+        cartao.onclick = function() {
+            abrirTema(numero);
+        };
+
+        if (tema.categoria === "Portugal") {
+            portugal.appendChild(cartao);
+        } else {
+            mundo.appendChild(cartao);
+        }
+
+    });
+
+}
+
+// Abrir tema
+
+function abrirTema(numero) {
+
+    const tema = temas[numero];
+
+    document.getElementById("listaPortugal").style.display = "none";
+    document.getElementById("listaMundo").style.display = "none";
+    document.querySelector(".search").style.display = "none";
 
     document.getElementById("artigo").style.display = "block";
     document.getElementById("editor").style.display = "none";
 
-    document.getElementById("artigo").scrollIntoView({
-        behavior: "smooth"
+    document.getElementById("tituloArtigo").innerText = tema.titulo;
+
+    const texto = document.getElementById("textoArtigo");
+
+    texto.innerHTML = "";
+
+    tema.texto.split("\n\n").forEach(paragrafo => {
+
+        const p = document.createElement("p");
+        p.textContent = paragrafo;
+
+        texto.appendChild(p);
+
     });
+
+    if (tema.imagem) {
+
+        const img = document.createElement("img");
+
+        img.src = tema.imagem;
+        img.alt = tema.titulo;
+
+        texto.prepend(img);
+
+    }
+
+    window.scrollTo(0, 0);
+
 }
+
+// Voltar à lista
+
+function mostrarLista() {
+
+    document.getElementById("artigo").style.display = "none";
+    document.getElementById("editor").style.display = "none";
+
+    document.getElementById("listaPortugal").style.display = "grid";
+    document.getElementById("listaMundo").style.display = "grid";
+
+    document.querySelector(".search").style.display = "block";
+
+    document.getElementById("pesquisa").value = "";
+
+    criarCards();
+
+    window.scrollTo(0, 0);
+
+}
+
+// Pesquisa
+
+function pesquisarTemas() {
+
+    const pesquisa = document.getElementById("pesquisa").value.toLowerCase();
+
+    const portugal = document.getElementById("listaPortugal");
+    const mundo = document.getElementById("listaMundo");
+
+    portugal.innerHTML = "";
+    mundo.innerHTML = "";
+
+    temas.forEach((tema, numero) => {
+
+        const corresponde =
+            tema.titulo.toLowerCase().includes(pesquisa) ||
+            tema.resumo.toLowerCase().includes(pesquisa) ||
+            tema.categoria.toLowerCase().includes(pesquisa);
+
+        if (!corresponde) return;
+
+        const cartao = document.createElement("div");
+
+        cartao.className = "card";
+
+        cartao.innerHTML = `
+            <h3>${tema.titulo}</h3>
+            <p>${tema.resumo}</p>
+        `;
+
+        cartao.onclick = function() {
+            abrirTema(numero);
+        };
+
+        if (tema.categoria === "Portugal") {
+            portugal.appendChild(cartao);
+        } else {
+            mundo.appendChild(cartao);
+        }
+
+    });
+
+}
+
+// Abrir editor
+
+let temaAtual = null;
 
 function abrirEditor() {
 
-    const artigo = artigos[temaAtual] || {
-        titulo: temaAtual,
-        resumo: "",
-        texto: "",
-        imagem: ""
-    };
-
-    document.getElementById("campoTitulo").value = artigo.titulo;
-    document.getElementById("campoResumo").value = artigo.resumo;
-    document.getElementById("campoTexto").value = artigo.texto;
-    document.getElementById("campoImagem").value = artigo.imagem;
+    temaAtual = temas[temas.findIndex(
+        tema => tema.titulo === document.getElementById("tituloArtigo").innerText
+    )];
 
     document.getElementById("editor").style.display = "block";
+
+    document.getElementById("novoTitulo").value = temaAtual.titulo;
+    document.getElementById("novoResumo").value = temaAtual.resumo;
+    document.getElementById("novoTexto").value = temaAtual.texto;
+
+    document.getElementById("preview").innerHTML = "";
+
 }
 
-function guardarArtigo() {
+// Guardar alterações
 
-    artigos[temaAtual] = {
-        titulo: document.getElementById("campoTitulo").value,
-        resumo: document.getElementById("campoResumo").value,
-        texto: document.getElementById("campoTexto").value,
-        imagem: document.getElementById("campoImagem").value
-    };
+function guardarAlteracoes() {
 
-    localStorage.setItem("artigosHistoria", JSON.stringify(artigos));
+    temaAtual.titulo = document.getElementById("novoTitulo").value;
+    temaAtual.resumo = document.getElementById("novoResumo").value;
+    temaAtual.texto = document.getElementById("novoTexto").value;
 
-    mostrarCaixas();
-    abrirArtigo(temaAtual);
+    const ficheiro = document.getElementById("imagem").files[0];
 
-    alert("Artigo guardado neste navegador!");
+    if (ficheiro) {
+
+        const leitor = new FileReader();
+
+        leitor.onload = function() {
+
+            temaAtual.imagem = leitor.result;
+
+            guardarDados();
+
+        };
+
+        leitor.readAsDataURL(ficheiro);
+
+    } else {
+
+        guardarDados();
+
+    }
+
 }
+
+function guardarDados() {
+
+    localStorage.setItem("memoriaHistorica", JSON.stringify(temas));
+
+    document.getElementById("editor").style.display = "none";
+
+    abrirTema(temas.indexOf(temaAtual));
+
+    alert("Alterações guardadas!");
+
+}
+
+// Cancelar edição
 
 function cancelarEdicao() {
+
     document.getElementById("editor").style.display = "none";
+
 }
 
-function fecharArtigo() {
-    document.getElementById("artigo").style.display = "none";
-}
+// Iniciar site
 
-mostrarCaixas();
+criarCards();
 
 </script>
 
