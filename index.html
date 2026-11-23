@@ -22,6 +22,19 @@ button:hover{background:#54252e}
 footer{text-align:center;background:#39202a;color:white;padding:20px}
 #search{width:90%;font-size:18px}
 .comment{background:#eee;padding:12px;margin:10px;border-radius:8px}
+
+.modo-edicao [contenteditable="true"]{
+outline:2px dashed #d4ae72;
+outline-offset:3px;
+cursor:text;
+}
+.modo-edicao [contenteditable="true"]:focus{
+outline:2px solid #742d3d;
+}
+#estadoEdicao{
+font-weight:bold;
+color:#742d3d;
+}
 </style>
 </head>
 
@@ -1002,9 +1015,12 @@ footer{text-align:center;background:#39202a;color:white;padding:20px}
 
 <section>
 <h2>Área de edição</h2>
-<p>Esta área permite editar o texto do site. A edição está protegida por um PIN.</p>
-<button onclick="editar()">Editar o site</button>
-<button onclick="window.print()">Imprimir / Guardar PDF</button>
+<p>Carrega no botão para ativar a edição. Depois podes clicar diretamente nos textos e alterá-los.</p>
+<button onclick="alternarEdicao()" id="botaoEdicao">✏️ Editar o site</button>
+<button onclick="guardarEdicao()">💾 Guardar alterações</button>
+<button onclick="restaurarOriginal()">↩️ Restaurar texto original</button>
+<button onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+<p id="estadoEdicao"></p>
 </section>
 
 </div>
@@ -1015,54 +1031,127 @@ footer{text-align:center;background:#39202a;color:white;padding:20px}
 </footer>
 
 <script>
+let modoEdicao = false;
+
+const secoesEditaveis = ["dinastias", "guerra1", "guerra2", "estado", "abril"];
+
 function pesquisar(){
-const termo=document.getElementById("search").value.toLowerCase();
-const sec=document.querySelectorAll("#conteudo section");
-sec.forEach(s=>{
-s.style.display=s.innerText.toLowerCase().includes(termo)?"":"none";
-});
+    const termo = document.getElementById("search").value.toLowerCase();
+    const sec = document.querySelectorAll("#conteudo section");
+
+    sec.forEach(s => {
+        s.style.display = s.innerText.toLowerCase().includes(termo) ? "" : "none";
+    });
 }
 
 function adicionarComentario(){
-const nome=document.getElementById("nome").value.trim();
-const texto=document.getElementById("comentario").value.trim();
-if(!nome||!texto){alert("Preenche o nome e o comentário.");return;}
-const comentarios=JSON.parse(localStorage.getItem("comentarios")||"[]");
-comentarios.push({nome,texto});
-localStorage.setItem("comentarios",JSON.stringify(comentarios));
-document.getElementById("nome").value="";
-document.getElementById("comentario").value="";
-mostrarComentarios();
+    const nome = document.getElementById("nome").value.trim();
+    const texto = document.getElementById("comentario").value.trim();
+
+    if(!nome || !texto){
+        alert("Preenche o nome e o comentário.");
+        return;
+    }
+
+    const comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
+    comentarios.push({nome, texto});
+    localStorage.setItem("comentarios", JSON.stringify(comentarios));
+
+    document.getElementById("nome").value = "";
+    document.getElementById("comentario").value = "";
+    mostrarComentarios();
 }
 
 function mostrarComentarios(){
-const comentarios=JSON.parse(localStorage.getItem("comentarios")||"[]");
-document.getElementById("comentarios").innerHTML="";
-comentarios.forEach(c=>{
-const div=document.createElement("div");
-div.className="comment";
-div.textContent=c.nome+": "+c.texto;
-document.getElementById("comentarios").appendChild(div);
+    const comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
+    const caixa = document.getElementById("comentarios");
+
+    caixa.innerHTML = "";
+
+    comentarios.forEach(c => {
+        const div = document.createElement("div");
+        div.className = "comment";
+        div.textContent = c.nome + ": " + c.texto;
+        caixa.appendChild(div);
+    });
+}
+
+function alternarEdicao(){
+    modoEdicao = !modoEdicao;
+
+    secoesEditaveis.forEach(id => {
+        const secao = document.getElementById(id);
+        if(secao){
+            secao.contentEditable = modoEdicao ? "true" : "false";
+        }
+    });
+
+    document.body.classList.toggle("modo-edicao", modoEdicao);
+
+    const botao = document.getElementById("botaoEdicao");
+    const estado = document.getElementById("estadoEdicao");
+
+    if(modoEdicao){
+        botao.textContent = "🔒 Terminar edição";
+        estado.textContent = "✏️ Edição ativada! Clica diretamente nos textos para os editar.";
+    }else{
+        guardarEdicao();
+        botao.textContent = "✏️ Editar o site";
+        estado.textContent = "🔒 Edição terminada. As alterações foram guardadas.";
+    }
+}
+
+function guardarEdicao(){
+    const conteudos = {};
+
+    secoesEditaveis.forEach(id => {
+        const secao = document.getElementById(id);
+        if(secao){
+            conteudos[id] = secao.innerHTML;
+        }
+    });
+
+    localStorage.setItem("conteudoEditado", JSON.stringify(conteudos));
+    document.getElementById("estadoEdicao").textContent = "💾 Alterações guardadas automaticamente!";
+}
+
+function restaurarOriginal(){
+    const confirmar = confirm("Tens a certeza que queres apagar todas as alterações e restaurar o texto original?");
+
+    if(!confirmar) return;
+
+    localStorage.removeItem("conteudoEditado");
+    alert("Alterações apagadas. A página vai ser atualizada.");
+    location.reload();
+}
+
+document.addEventListener("input", function(){
+    if(modoEdicao){
+        guardarEdicao();
+    }
 });
-}
 
-function editar(){
-const pin=prompt("Introduz o PIN:");
-if(pin!=="5580"){alert("PIN incorreto.");return;}
-const conteudo=document.getElementById("conteudo");
-const novo=prompt("Cola aqui o HTML que queres usar para substituir o conteúdo:");
-if(novo!==null){
-conteudo.innerHTML=novo;
-localStorage.setItem("conteudoEditado",novo);
-alert("Alterações guardadas neste navegador.");
-}
-}
+window.onload = function(){
+    mostrarComentarios();
 
-window.onload=function(){
-mostrarComentarios();
-const guardado=localStorage.getItem("conteudoEditado");
-if(guardado)document.getElementById("conteudo").innerHTML=guardado;
-}
+    const guardado = localStorage.getItem("conteudoEditado");
+
+    if(guardado){
+        try{
+            const conteudos = JSON.parse(guardado);
+
+            secoesEditaveis.forEach(id => {
+                const secao = document.getElementById(id);
+
+                if(secao && conteudos[id]){
+                    secao.innerHTML = conteudos[id];
+                }
+            });
+        }catch(erro){
+            console.error("Erro ao carregar alterações:", erro);
+        }
+    }
+};
 </script>
 
 </body>
