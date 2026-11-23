@@ -33,6 +33,31 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
+.pesquisa {
+    margin-top: 15px;
+}
+
+.pesquisa input {
+    width: 250px;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.pesquisa button {
+    margin: 5px;
+}
+
+#resultadoPesquisa {
+    color: white;
+    margin-top: 10px;
+}
+
 section {
     max-width: 1000px;
     margin: 30px auto;
@@ -107,6 +132,21 @@ footer {
     padding: 20px;
 }
 
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .pesquisa input {
+        width: 65%;
+    }
+}
 </style>
 </head>
 
@@ -123,17 +163,33 @@ footer {
 <a href="#guerra2">2.ª Guerra Mundial</a>
 <a href="#estado">Estado Novo</a>
 <a href="#abril">25 de Abril</a>
+
+<div class="pesquisa">
+    <input
+        type="text"
+        id="search"
+        placeholder="🔎 Pesquisar na História..."
+        oninput="pesquisar()"
+    >
+
+    <button onclick="limparPesquisa()">Limpar</button>
+
+    <p id="resultadoPesquisa"></p>
+</div>
 </nav>
 
 <section>
 <h2>Introdução</h2>
+
 <p>A História permite-nos compreender o passado, conhecer os acontecimentos que marcaram Portugal e o mundo e perceber como esses acontecimentos influenciaram a sociedade atual. Neste espaço, podemos aprender sobre reis, guerras, revoluções, mudanças políticas e momentos importantes da humanidade.</p>
 </section>
 
 <section id="dinastias">
+
 <h2>As Dinastias Portuguesas</h2>
 
 <h3>1.ª Dinastia — Dinastia de Borgonha (1143–1383)</h3>
+
 <p>A primeira dinastia portuguesa começou com D. Afonso Henriques, considerado o primeiro rei de Portugal. Durante este período, Portugal conquistou a sua independência, expandiu o território e consolidou-se como reino.</p>
 
 <h3>D. Afonso Henriques</h3>
@@ -164,6 +220,7 @@ footer {
 <p>D. Fernando foi o último rei da primeira dinastia. A sua morte provocou uma crise de sucessão que levou à Revolução de 1383–1385.</p>
 
 <h3>2.ª Dinastia — Dinastia de Avis (1385–1580)</h3>
+
 <p>A segunda dinastia começou com D. João I, após a crise de 1383–1385. Este período foi marcado pela consolidação da independência, pelos Descobrimentos portugueses e pela expansão marítima.</p>
 
 <h3>D. João I</h3>
@@ -191,6 +248,7 @@ footer {
 <p>D. Henrique foi o último rei da segunda dinastia. A sua morte, em 1580, originou uma disputa pelo trono português.</p>
 
 <h3>3.ª Dinastia — Dinastia Filipina (1580–1640)</h3>
+
 <p>A terceira dinastia começou quando Filipe II de Espanha se tornou Filipe I de Portugal. Portugal passou a estar governado pelos reis espanhóis, embora inicialmente mantivesse algumas instituições próprias.</p>
 
 <h3>Filipe I</h3>
@@ -203,6 +261,7 @@ footer {
 <p>O aumento dos impostos e a perda de influência portuguesa contribuíram para o descontentamento da população.</p>
 
 <h3>4.ª Dinastia — Dinastia de Bragança (1640–1910)</h3>
+
 <p>A quarta dinastia começou com a Restauração da Independência, em 1640, quando Portugal voltou a ter um rei português.</p>
 
 <h3>D. João IV</h3>
@@ -246,9 +305,11 @@ footer {
 
 <h3>D. Manuel II</h3>
 <p>D. Manuel II foi o último rei de Portugal. A monarquia terminou com a Revolução de 5 de Outubro de 1910, que instaurou a República.</p>
+
 </section>
 
 <section id="guerra1">
+
 <h2>1.ª Guerra Mundial (1914–1918)</h2>
 
 <p>A Primeira Guerra Mundial foi um dos conflitos mais devastadores da História. Envolveu várias potências mundiais e provocou milhões de mortos, transformando profundamente a Europa.</p>
@@ -259,7 +320,9 @@ footer {
 <p>O assassinato do arquiduque Francisco Fernando da Áustria, em Sarajevo, em 28 de junho de 1914, desencadeou a crise que levou à guerra.</p>
 
 <h3>Os países envolvidos</h3>
+
 <p>As principais potências dividiram-se em dois grupos:</p>
+
 <ul>
 <li>Aliados: França, Reino Unido, Rússia e, mais tarde, Estados Unidos.</li>
 <li>Potências Centrais: Alemanha, Áustria-Hungria, Império Otomano e Bulgária.</li>
@@ -272,6 +335,7 @@ footer {
 <p>A guerra terminou em 11 de novembro de 1918, com o armistício. O Tratado de Versalhes, assinado em 1919, impôs duras condições à Alemanha.</p>
 
 <h3>Consequências</h3>
+
 <ul>
 <li>Milhões de mortos e feridos.</li>
 <li>Destruição de cidades e territórios.</li>
@@ -280,9 +344,11 @@ footer {
 <li>Crises económicas e políticas.</li>
 <li>Condições que contribuíram para a Segunda Guerra Mundial.</li>
 </ul>
+
 </section>
 
 <section id="guerra2">
+
 <h2>2.ª Guerra Mundial (1939–1945)</h2>
 
 <p>A Segunda Guerra Mundial foi um conflito global que envolveu grande parte do mundo. Começou em 1939 e terminou em 1945, causando enorme destruição e milhões de vítimas.</p>
@@ -294,6 +360,7 @@ footer {
 <p>Em 1 de setembro de 1939, a Alemanha invadiu a Polónia. Dois dias depois, o Reino Unido e a França declararam guerra à Alemanha.</p>
 
 <h3>Os principais grupos</h3>
+
 <ul>
 <li>Aliados: Reino Unido, França, União Soviética, Estados Unidos e outros países.</li>
 <li>Eixo: Alemanha, Itália e Japão.</li>
@@ -309,6 +376,7 @@ footer {
 <p>A guerra na Europa terminou em maio de 1945, após a derrota da Alemanha nazi. O Japão capitulou em setembro de 1945, depois dos bombardeamentos atómicos de Hiroshima e Nagasaki e da entrada da União Soviética na guerra contra o Japão.</p>
 
 <h3>Consequências</h3>
+
 <ul>
 <li>Milhões de mortos.</li>
 <li>Destruição de cidades e infraestruturas.</li>
@@ -317,9 +385,11 @@ footer {
 <li>Descolonização de vários territórios.</li>
 <li>Julgamentos de criminosos de guerra.</li>
 </ul>
+
 </section>
 
 <section id="estado">
+
 <h2>Estado Novo (1933–1974)</h2>
 
 <p>O Estado Novo foi um regime político autoritário que governou Portugal durante mais de quatro décadas. Foi liderado por António de Oliveira Salazar e, posteriormente, por Marcelo Caetano.</p>
@@ -328,6 +398,7 @@ footer {
 <p>Em 1933 foi aprovada uma nova Constituição, que estabeleceu oficialmente o Estado Novo. O regime limitava as liberdades individuais e concentrava o poder no governo.</p>
 
 <h3>Características</h3>
+
 <ul>
 <li>Ditadura autoritária.</li>
 <li>Censura à imprensa, livros, rádio e outros meios de comunicação.</li>
@@ -350,14 +421,17 @@ footer {
 
 <h3>O fim do regime</h3>
 <p>O Estado Novo terminou com a Revolução de 25 de Abril de 1974, que instaurou a democracia e abriu caminho à descolonização.</p>
+
 </section>
 
 <section id="abril">
+
 <h2>25 de Abril de 1974 — Revolução dos Cravos</h2>
 
 <p>A Revolução de 25 de Abril foi um acontecimento fundamental na História de Portugal. Terminou a ditadura do Estado Novo e iniciou a construção de uma democracia.</p>
 
 <h3>As causas</h3>
+
 <ul>
 <li>Falta de liberdade política.</li>
 <li>Censura.</li>
@@ -377,6 +451,7 @@ footer {
 <p>Marcelo Caetano entregou o poder e o regime terminou. A revolução ficou conhecida como Revolução dos Cravos por ter sido realizada de forma relativamente pacífica.</p>
 
 <h3>Consequências</h3>
+
 <ul>
 <li>Fim da censura.</li>
 <li>Liberdade de expressão.</li>
@@ -388,28 +463,37 @@ footer {
 <li>Constituição de 1976.</li>
 <li>Instalação da democracia em Portugal.</li>
 </ul>
+
 </section>
 
-<section>
+<section id="comentariosSection">
+
 <h2>Comentários</h2>
 
 <input type="text" id="nome" placeholder="O teu nome">
+
 <textarea id="comentario" placeholder="Escreve um comentário"></textarea>
+
 <button onclick="adicionarComentario()">Enviar comentário</button>
 
 <div id="comentarios"></div>
+
 </section>
 
-<section>
+<section id="edicaoSection">
+
 <h2>Área de edição</h2>
 
 <p>Introduz o PIN para desbloquear a edição direta do site.</p>
 
 <button onclick="editar()">🔓 Editar o site</button>
+
 <button onclick="terminarEdicao()">🔒 Terminar edição</button>
+
 <button onclick="guardarEdicao()">💾 Guardar alterações</button>
 
 <p id="estadoEdicao"></p>
+
 </section>
 
 <footer>
@@ -428,61 +512,143 @@ const secoesHistoricas = [
     "abril"
 ];
 
+/* PESQUISA */
+
 function pesquisar() {
-    const termo = document.getElementById("search").value.toLowerCase();
+
+    const termo = document.getElementById("search").value
+        .toLowerCase()
+        .trim();
+
+    let resultados = 0;
 
     secoesHistoricas.forEach(id => {
+
         const secao = document.getElementById(id);
 
         if (secao) {
-            secao.style.display =
-                secao.innerText.toLowerCase().includes(termo) ? "" : "none";
+
+            const texto = secao.innerText.toLowerCase();
+
+            if (termo === "" || texto.includes(termo)) {
+
+                secao.style.display = "";
+                resultados++;
+
+            } else {
+
+                secao.style.display = "none";
+
+            }
+
         }
+
     });
+
+    const resultado = document.getElementById("resultadoPesquisa");
+
+    if (termo === "") {
+
+        resultado.textContent = "";
+
+    } else if (resultados === 0) {
+
+        resultado.textContent = "Não foram encontrados resultados.";
+
+    } else {
+
+        resultado.textContent =
+            "Encontrámos " + resultados +
+            " secção(ões) relacionada(s) com a tua pesquisa.";
+
+    }
+
 }
 
+/* LIMPAR PESQUISA */
+
+function limparPesquisa() {
+
+    document.getElementById("search").value = "";
+
+    pesquisar();
+
+}
+
+/* COMENTÁRIOS */
+
 function adicionarComentario() {
+
     const nome = document.getElementById("nome").value.trim();
+
     const texto = document.getElementById("comentario").value.trim();
 
     if (!nome || !texto) {
+
         alert("Preenche o nome e o comentário.");
+
         return;
+
     }
 
-    const comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
+    const comentarios = JSON.parse(
+        localStorage.getItem("comentarios") || "[]"
+    );
 
     comentarios.push({
         nome: nome,
         texto: texto
     });
 
-    localStorage.setItem("comentarios", JSON.stringify(comentarios));
+    localStorage.setItem(
+        "comentarios",
+        JSON.stringify(comentarios)
+    );
 
     document.getElementById("nome").value = "";
+
     document.getElementById("comentario").value = "";
 
     mostrarComentarios();
+
 }
 
+/* MOSTRAR COMENTÁRIOS */
+
 function mostrarComentarios() {
-    const comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
+
+    const comentarios = JSON.parse(
+        localStorage.getItem("comentarios") || "[]"
+    );
+
     const caixa = document.getElementById("comentarios");
 
     caixa.innerHTML = "";
 
     comentarios.forEach(c => {
+
         const div = document.createElement("div");
+
         div.className = "comment";
+
         div.textContent = c.nome + ": " + c.texto;
+
         caixa.appendChild(div);
+
     });
+
 }
 
+/* EDITAR SITE COM PIN */
+
 function editar() {
+
     if (modoEdicao) {
+
         alert("O modo de edição já está ativado.");
+
         return;
+
     }
 
     const pin = prompt("Introduz o PIN para editar o site:");
@@ -490,18 +656,25 @@ function editar() {
     if (pin === null) return;
 
     if (pin !== "5580") {
+
         alert("PIN incorreto! Não podes editar o site.");
+
         return;
+
     }
 
     modoEdicao = true;
 
     secoesHistoricas.forEach(id => {
+
         const secao = document.getElementById(id);
 
         if (secao) {
+
             secao.contentEditable = "true";
+
         }
+
     });
 
     document.body.classList.add("modo-edicao");
@@ -510,22 +683,33 @@ function editar() {
         "✏️ MODO DE EDIÇÃO ATIVADO — Podes clicar nos textos e editá-los diretamente.";
 
     alert("PIN correto! Modo de edição ativado.");
+
 }
 
+/* TERMINAR EDIÇÃO */
+
 function terminarEdicao() {
+
     if (!modoEdicao) {
+
         alert("O modo de edição não está ativado.");
+
         return;
+
     }
 
     guardarEdicao();
 
     secoesHistoricas.forEach(id => {
+
         const secao = document.getElementById(id);
 
         if (secao) {
+
             secao.contentEditable = "false";
+
         }
+
     });
 
     modoEdicao = false;
@@ -536,57 +720,91 @@ function terminarEdicao() {
         "🔒 Modo de edição terminado. Alterações guardadas.";
 
     alert("Edição terminada!");
+
 }
 
+/* GUARDAR ALTERAÇÕES */
+
 function guardarEdicao() {
+
     if (!modoEdicao) {
+
         alert("Tens de introduzir o PIN 5580 antes de guardar.");
+
         return;
+
     }
 
     const conteudos = {};
 
     secoesHistoricas.forEach(id => {
+
         const secao = document.getElementById(id);
 
         if (secao) {
+
             conteudos[id] = secao.innerHTML;
+
         }
+
     });
 
-    localStorage.setItem("conteudoEditado", JSON.stringify(conteudos));
+    localStorage.setItem(
+        "conteudoEditado",
+        JSON.stringify(conteudos)
+    );
 
     document.getElementById("estadoEdicao").textContent =
         "💾 Alterações guardadas automaticamente!";
+
 }
 
+/* GUARDAR AUTOMATICAMENTE QUANDO ESCREVES */
+
 document.addEventListener("input", function() {
+
     if (modoEdicao) {
+
         guardarEdicao();
+
     }
+
 });
 
+/* CARREGAR SITE */
+
 window.onload = function() {
+
     mostrarComentarios();
 
     const guardado = localStorage.getItem("conteudoEditado");
 
     if (guardado) {
+
         try {
+
             const conteudos = JSON.parse(guardado);
 
             secoesHistoricas.forEach(id => {
+
                 const secao = document.getElementById(id);
 
                 if (secao && conteudos[id]) {
+
                     secao.innerHTML = conteudos[id];
+
                 }
+
             });
 
         } catch (erro) {
+
             console.error("Erro ao carregar alterações:", erro);
+
         }
+
     }
+
 };
 
 </script>
