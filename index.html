@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Memória Histórica</title>
+<title>História de Portugal e do Mundo</title>
 
 <style>
 * {
@@ -14,695 +14,556 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f4f1ea;
-    color: #263238;
+    color: #252525;
 }
 
 header {
-    background: #263238;
+    background: #263b50;
     color: white;
     text-align: center;
     padding: 35px 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 38px;
-}
-
-header p {
-    margin-bottom: 0;
-}
-
 nav {
-    background: #a33a32;
-    padding: 15px;
-    text-align: center;
+    background: #172b3d;
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    padding: 10px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background: #496780;
+    border-radius: 5px;
 }
 
-main {
+.container {
     max-width: 1100px;
     margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
     padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000015;
 }
 
 h2 {
-    color: #a33a32;
+    color: #263b50;
+    border-bottom: 2px solid #c6a76b;
+    padding-bottom: 10px;
 }
 
-.search {
-    margin: 25px 0;
+h3 {
+    color: #526b80;
 }
 
-.search input {
-    width: 100%;
-    padding: 13px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 5px solid #a33a32;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-}
-
-.card h3 {
-    color: #a33a32;
-    margin-top: 0;
-}
-
-button {
-    background: #a33a32;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    margin: 5px;
-}
-
-button:hover {
-    background: #7d2924;
-}
-
-.voltar {
-    background: #263238;
-}
-
-#artigo, #editor {
-    display: none;
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    line-height: 1.7;
-    margin-top: 20px;
-}
-
-#artigo h2, #artigo h3 {
-    color: #a33a32;
-}
-
-#artigo img {
+img {
     max-width: 100%;
-    border-radius: 8px;
-    margin: 15px 0;
+    border-radius: 10px;
 }
 
-#editor input, #editor textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0 15px;
+input, textarea, button {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
     border: 1px solid #ccc;
-    border-radius: 5px;
     font-family: Arial;
 }
 
-#editor textarea {
-    min-height: 250px;
+button {
+    background: #263b50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #496780;
+}
+
+#pesquisa {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.comentario {
+    background: #f1f1f1;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
 }
 
 footer {
-    background: #263238;
-    color: white;
     text-align: center;
+    background: #263b50;
+    color: white;
     padding: 20px;
-    margin-top: 40px;
 }
 
-@media(max-width:600px) {
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    main {
-        padding: 15px;
-    }
+#painelEdicao {
+    display: none;
+    background: #fff4d6;
+    padding: 20px;
+    border-radius: 10px;
 }
+
+#editor {
+    width: 100%;
+    min-height: 300px;
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Memória Histórica</h1>
-    <p>Um espaço dedicado à História de Portugal e do Mundo</p>
+    <h1>História de Portugal e do Mundo</h1>
+    <p>Da formação de Portugal à história contemporânea</p>
 </header>
 
 <nav>
-    <a href="#inicio">Início</a>
-    <a href="#portugal">História de Portugal</a>
-    <a href="#mundo">História Mundial</a>
+    <a href="#dinastia1">1.ª Dinastia</a>
+    <a href="#dinastia2">2.ª Dinastia</a>
+    <a href="#dinastia3">3.ª Dinastia</a>
+    <a href="#dinastia4">4.ª Dinastia</a>
+    <a href="#estadoNovo">Estado Novo</a>
+    <a href="#abril">25 de Abril</a>
+    <a href="#ww1">1.ª Guerra Mundial</a>
+    <a href="#ww2">2.ª Guerra Mundial</a>
 </nav>
 
-<main>
+<div class="container">
 
-<section id="inicio">
-    <h2>Bem-vindo à Memória Histórica</h2>
+<input type="text" id="pesquisa" placeholder="Pesquisar na História..." onkeyup="pesquisar()">
 
-    <p>
-        Este site tem como objetivo apresentar acontecimentos,
-        períodos e figuras importantes da História de Portugal
-        e do Mundo, ajudando a compreender o passado e a sua
-        influência no presente.
-    </p>
+<div id="conteudo">
+
+<!-- 1. DINASTIA -->
+
+<section id="dinastia1">
+<h2>1.ª Dinastia — Dinastia de Borgonha</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Portugal_1143.svg/800px-Portugal_1143.svg.png" alt="Portugal na época da formação">
+
+<h3>Formação de Portugal</h3>
+
+<p>
+A primeira dinastia portuguesa começou com D. Afonso Henriques,
+que se tornou o primeiro rei de Portugal. A independência foi
+reconhecida em 1143, através do Tratado de Zamora.
+</p>
+
+<h3>D. Afonso Henriques</h3>
+<p>
+D. Afonso Henriques lutou pela independência do território
+português e conquistou várias terras aos muçulmanos.
+É considerado o fundador de Portugal.
+</p>
+
+<h3>Principais acontecimentos</h3>
+<ul>
+<li>1143 — Tratado de Zamora.</li>
+<li>1179 — Bula Manifestis Probatum.</li>
+<li>Conquista de territórios para sul.</li>
+<li>Desenvolvimento e consolidação do reino.</li>
+</ul>
 </section>
 
-<div class="search">
-    <input
-        type="text"
-        id="pesquisa"
-        placeholder="Pesquisar um tema..."
-        onkeyup="pesquisarTemas()"
-    >
-</div>
+<!-- 2. DINASTIA -->
 
-<section id="portugal">
-    <h2>História de Portugal</h2>
+<section id="dinastia2">
+<h2>2.ª Dinastia — Dinastia de Avis</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Portuguese_discoveries.png/800px-Portuguese_discoveries.png" alt="Descobrimentos portugueses">
+
+<h3>Revolução de 1383-1385</h3>
+<p>
+A crise de sucessão portuguesa levou à Revolução de 1383-1385.
+D. João, Mestre de Avis, foi escolhido como rei.
+</p>
+
+<h3>D. João I</h3>
+<p>
+D. João I iniciou a Dinastia de Avis e consolidou a independência
+portuguesa depois da vitória na Batalha de Aljubarrota, em 1385.
+</p>
+
+<h3>Os Descobrimentos</h3>
+<p>
+Portugal iniciou a expansão marítima, explorando novas rotas
+comerciais e territórios. Os navegadores portugueses contribuíram
+para a expansão do conhecimento geográfico.
+</p>
+
+<ul>
+<li>1415 — Conquista de Ceuta.</li>
+<li>Descoberta da Madeira e dos Açores.</li>
+<li>1488 — Bartolomeu Dias contorna o Cabo da Boa Esperança.</li>
+<li>1498 — Vasco da Gama chega à Índia.</li>
+<li>1500 — Pedro Álvares Cabral chega ao Brasil.</li>
+</ul>
 </section>
 
-<div class="cards" id="listaPortugal"></div>
+<!-- 3. DINASTIA -->
 
-<section id="mundo">
-    <h2>História Mundial</h2>
+<section id="dinastia3">
+<h2>3.ª Dinastia — Dinastia Filipina</h2>
+
+<h3>União Ibérica</h3>
+<p>
+Em 1580, Portugal passou a ser governado pelos reis espanhóis,
+iniciando a União Ibérica.
+</p>
+
+<h3>Reis</h3>
+<ul>
+<li>Filipe I</li>
+<li>Filipe II</li>
+<li>Filipe III</li>
+</ul>
+
+<h3>Restauração da Independência</h3>
+<p>
+Em 1 de dezembro de 1640, Portugal recuperou a independência,
+com a revolução que colocou D. João IV no trono.
+</p>
 </section>
 
-<div class="cards" id="listaMundo"></div>
+<!-- 4. DINASTIA -->
 
-<div id="artigo">
-    <button class="voltar" onclick="mostrarLista()">← Voltar aos temas</button>
+<section id="dinastia4">
+<h2>4.ª Dinastia — Dinastia de Bragança</h2>
 
-    <h2 id="tituloArtigo"></h2>
+<h3>Principais acontecimentos</h3>
+<ul>
+<li>Restauração da Independência em 1640.</li>
+<li>Reinado de D. João IV.</li>
+<li>Reinado de D. Pedro II.</li>
+<li>Reinado de D. João V.</li>
+<li>Terramoto de Lisboa em 1755.</li>
+<li>Reinado de D. José I.</li>
+<li>Reinado de D. Maria I.</li>
+<li>Invasões Francesas.</li>
+<li>Revolução Liberal de 1820.</li>
+<li>Guerra Civil entre liberais e absolutistas.</li>
+<li>Reinado de D. Pedro V.</li>
+<li>Reinado de D. Luís I.</li>
+<li>Reinado de D. Carlos I.</li>
+<li>Implantação da República em 1910.</li>
+</ul>
 
-    <div id="textoArtigo"></div>
+<p>
+A 4.ª Dinastia terminou com a Implantação da República,
+a 5 de outubro de 1910.
+</p>
+</section>
 
-    <button onclick="abrirEditor()">✏️ Editar este tema</button>
+<!-- ESTADO NOVO -->
+
+<section id="estadoNovo">
+<h2>Estado Novo</h2>
+
+<h3>O que foi?</h3>
+<p>
+O Estado Novo foi um regime autoritário que existiu em Portugal
+entre 1933 e 1974.
+</p>
+
+<h3>António de Oliveira Salazar</h3>
+<p>
+Salazar foi o principal dirigente do regime. Defendia um governo
+autoritário, nacionalista e conservador.
+</p>
+
+<h3>Características</h3>
+<ul>
+<li>Censura.</li>
+<li>Polícia política.</li>
+<li>Falta de liberdade de expressão.</li>
+<li>Partido único.</li>
+<li>Repressão dos opositores.</li>
+<li>Propaganda política.</li>
+</ul>
+
+<h3>Guerra Colonial</h3>
+<p>
+Portugal participou em guerras em Angola, Moçambique e Guiné,
+entre 1961 e 1974, tentando manter os territórios coloniais.
+</p>
+</section>
+
+<!-- 25 ABRIL -->
+
+<section id="abril">
+<h2>25 de Abril de 1974</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/25_de_Abril_de_1974.jpg/800px-25_de_Abril_de_1974.jpg" alt="Revolução de Abril">
+
+<h3>Revolução dos Cravos</h3>
+<p>
+A Revolução de 25 de Abril de 1974 pôs fim ao Estado Novo.
+Foi organizada pelo Movimento das Forças Armadas.
+</p>
+
+<h3>Objetivos</h3>
+<ul>
+<li>Acabar com a ditadura.</li>
+<li>Restaurar a liberdade.</li>
+<li>Estabelecer a democracia.</li>
+<li>Acabar com a Guerra Colonial.</li>
+</ul>
+
+<h3>Consequências</h3>
+<ul>
+<li>Fim da censura.</li>
+<li>Liberdade de expressão.</li>
+<li>Liberdade política.</li>
+<li>Descolonização.</li>
+<li>Estabelecimento da democracia.</li>
+<li>Constituição de 1976.</li>
+</ul>
+</section>
+
+<!-- 1 GUERRA -->
+
+<section id="ww1">
+<h2>Primeira Guerra Mundial (1914-1918)</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/World_War_I.jpg/800px-World_War_I.jpg" alt="Primeira Guerra Mundial">
+
+<h3>Causes</h3>
+<ul>
+<li>Nacionalismo.</li>
+<li>Imperialismo.</li>
+<li>Militarismo.</li>
+<li>Alianças entre países.</li>
+<li>Assassinato do arquiduque Francisco Fernando.</li>
+</ul>
+
+<h3>Blocos</h3>
+<p><strong>Aliados:</strong> França, Reino Unido, Rússia e outros países.</p>
+<p><strong>Potências Centrais:</strong> Alemanha, Áustria-Hungria e outros.</p>
+
+<h3>Consequências</h3>
+<ul>
+<li>Milhões de mortos.</li>
+<li>Destruição de territórios.</li>
+<li>Fim de vários impérios.</li>
+<li>Tratado de Versalhes.</li>
+<li>Criação da Sociedade das Nações.</li>
+</ul>
+</section>
+
+<!-- 2 GUERRA -->
+
+<section id="ww2">
+<h2>Segunda Guerra Mundial (1939-1945)</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/World_War_II.jpg/800px-World_War_II.jpg" alt="Segunda Guerra Mundial">
+
+<h3>Principais causas</h3>
+<ul>
+<li>Tratado de Versalhes.</li>
+<li>Expansionismo nazi.</li>
+<li>Expansionismo fascista.</li>
+<li>Invasão da Polónia em 1939.</li>
+</ul>
+
+<h3>Aliados</h3>
+<p>Reino Unido, França, União Soviética, Estados Unidos e outros.</p>
+
+<h3>Eixo</h3>
+<p>Alemanha Nazi, Itália Fascista e Japão.</p>
+
+<h3>Holocausto</h3>
+<p>
+O Holocausto foi a perseguição e o assassinato sistemático de
+milhões de judeus pelos nazis e seus colaboradores.
+Também foram perseguidos outros grupos.
+</p>
+
+<h3>Consequências</h3>
+<ul>
+<li>Milhões de mortos.</li>
+<li>Destruição de cidades.</li>
+<li>Criação da Organização das Nações Unidas.</li>
+<li>Divisão da Alemanha.</li>
+<li>Início da Guerra Fria.</li>
+</ul>
+
+<h3>Portugal durante a guerra</h3>
+<p>
+Portugal manteve-se oficialmente neutral durante a Segunda Guerra
+Mundial, embora tenha permitido o uso de bases nos Açores pelos Aliados.
+</p>
+</section>
+
 </div>
 
-<div id="editor">
+<!-- COMENTÁRIOS -->
 
-    <h2>Editar tema</h2>
+<section id="comentarios">
+<h2>Comentários</h2>
 
-    <p>
-        Aqui podes escrever, alterar o texto e adicionar uma imagem.
-        As alterações ficam guardadas no teu navegador.
-    </p>
+<input type="text" id="nome" placeholder="O teu nome">
+<textarea id="comentario" placeholder="Escreve um comentário..." rows="4" style="width:100%"></textarea>
 
-    <label><b>Título:</b></label>
-    <input type="text" id="novoTitulo">
+<button onclick="adicionarComentario()">Enviar comentário</button>
 
-    <label><b>Resumo:</b></label>
-    <input type="text" id="novoResumo">
+<div id="listaComentarios"></div>
+</section>
 
-    <label><b>Texto:</b></label>
-    <textarea id="novoTexto"></textarea>
+<!-- EDITOR -->
 
-    <label><b>Adicionar imagem:</b></label>
-    <input type="file" id="imagem" accept="image/*">
+<section>
+<h2>Editar o site</h2>
+<button onclick="abrirEditor()">Entrar no modo de edição</button>
 
-    <div id="preview"></div>
+<div id="painelEdicao">
+<h3>Editor de conteúdo</h3>
+<p>Podes editar o conteúdo completo do site abaixo.</p>
 
-    <button onclick="guardarAlteracoes()">Guardar alterações</button>
-    <button class="voltar" onclick="cancelarEdicao()">Cancelar</button>
+<textarea id="editor"></textarea>
+
+<button onclick="guardarEdicao()">Guardar alterações</button>
+<button onclick="cancelarEdicao()">Cancelar</button>
+<button onclick="restaurarOriginal()">Restaurar versão original</button>
+</div>
+</section>
 
 </div>
-
-</main>
 
 <footer>
-    <p>Memória Histórica | Projeto Escolar</p>
+<p>Site de História — Trabalho escolar</p>
 </footer>
 
 <script>
 
-const temas = [
-
-{
-    titulo: "1.ª Dinastia — Dinastia de Borgonha",
-    resumo: "A formação e consolidação do Reino de Portugal.",
-    categoria: "Portugal",
-
-    texto: `
-A 1.ª Dinastia de Portugal, também conhecida como Dinastia de Borgonha ou Dinastia Afonsina, foi a primeira dinastia a governar o Reino de Portugal. Teve início com D. Afonso Henriques e terminou em 1383, com a morte de D. Fernando.
-
-D. Afonso Henriques foi o primeiro rei de Portugal e teve um papel fundamental na formação do reino. Lutou pela independência em relação a Leão e Castela e conquistou vários territórios.
-
-D. Sancho I ficou conhecido como o Povoador, devido ao seu esforço para desenvolver e povoar o território português.
-
-D. Afonso II deu importância à organização das leis e da administração do reino.
-
-D. Sancho II conquistou várias terras aos Mouros, mas enfrentou conflitos com a Igreja e parte da nobreza.
-
-D. Afonso III conquistou o Algarve, concluindo a conquista do território português.
-
-D. Dinis ficou conhecido como o Rei Lavrador. Desenvolveu a agricultura, o comércio e a cultura. Fundou também a Universidade em 1290.
-
-D. Afonso IV participou na Batalha do Salado, em 1340.
-
-D. Pedro I ficou conhecido como o Justiceiro e o seu reinado ficou marcado pela história de Inês de Castro.
-
-D. Fernando foi o último rei da 1.ª Dinastia. A sua morte, em 1383, deu origem à crise de sucessão.
-
-A 1.ª Dinastia foi essencial para a formação e consolidação de Portugal como reino independente.
-    `,
-
-    imagem: ""
-},
-
-{
-    titulo: "2.ª Dinastia — Dinastia de Avis",
-    resumo: "A Dinastia de Avis e a expansão portuguesa.",
-    categoria: "Portugal",
-
-    texto: `
-A 2.ª Dinastia de Portugal, também conhecida como Dinastia de Avis, começou em 1385 e terminou em 1580.
-
-Depois da morte de D. Fernando, em 1383, surgiu uma crise de sucessão. D. Beatriz era casada com o rei de Castela, o que levantou o receio de Portugal perder a sua independência.
-
-D. João, Mestre de Avis, foi apoiado por parte da população e da nobreza. Em 1385, foi aclamado rei nas Cortes de Coimbra. Nesse mesmo ano, os portugueses venceram os castelhanos na Batalha de Aljubarrota.
-
-D. João I consolidou a independência portuguesa e iniciou uma nova fase da História do país. Em 1415, conquistou Ceuta, dando início à expansão portuguesa.
-
-D. Duarte teve um reinado curto e ficou marcado pela expedição a Tânger.
-
-D. Afonso V ficou conhecido como o Africano devido às conquistas portuguesas no Norte de África.
-
-D. João II ficou conhecido como o Príncipe Perfeito. Reforçou o poder do rei e apoiou as viagens de exploração.
-
-D. Manuel I ficou conhecido como o Venturoso. Durante o seu reinado, Vasco da Gama chegou à Índia, em 1498, e Pedro Álvares Cabral chegou ao Brasil, em 1500.
-
-D. João III continuou a expansão do Império Português.
-
-D. Sebastião desapareceu na Batalha de Alcácer-Quibir, em 1578, sem deixar descendentes diretos.
-
-D. Henrique morreu em 1580 sem deixar descendentes, provocando uma crise de sucessão.
-
-A Dinastia de Avis ficou marcada pela expansão marítima, pelos Descobrimentos e pelo crescimento do Império Português.
-    `,
-
-    imagem: ""
-},
-
-{
-    titulo: "3.ª Dinastia — Dinastia Filipina",
-    resumo: "A União Ibérica e a Restauração da Independência.",
-    categoria: "Portugal",
-
-    texto: `
-A 3.ª Dinastia de Portugal, também conhecida como Dinastia Filipina, começou em 1580 e terminou em 1640.
-
-Esta dinastia começou depois da crise de sucessão de 1580, provocada pela morte de D. Henrique, que não deixou descendentes. Um dos pretendentes ao trono português era Filipe II de Espanha, neto de D. Manuel I, que conseguiu impor a sua candidatura e tornou-se rei de Portugal com o nome de D. Filipe I.
-
-Durante este período, Portugal e Espanha passaram a ter o mesmo monarca, situação conhecida como União Ibérica. Apesar de partilharem o mesmo rei, os dois reinos mantiveram inicialmente as suas próprias leis, instituições, moeda e administração.
-
-D. Filipe I foi reconhecido como rei nas Cortes de Tomar, em 1581.
-
-D. Filipe II governou entre 1598 e 1621. Durante o seu reinado, os ataques aos territórios portugueses no estrangeiro aumentaram.
-
-D. Filipe III foi o último rei da Dinastia Filipina. Durante o seu reinado, aumentaram os impostos e o descontentamento da população.
-
-A 1 de dezembro de 1640, um grupo de nobres portugueses organizou uma revolta para recuperar a independência.
-
-D. João, Duque de Bragança, foi aclamado rei, passando a chamar-se D. João IV.
-
-A Dinastia Filipina terminou em 1640, marcando a recuperação da independência portuguesa e o início da 4.ª Dinastia.
-    `,
-
-    imagem: ""
-},
-
-{
-    titulo: "4.ª Dinastia — Dinastia de Bragança",
-    resumo: "A recuperação da independência e a Dinastia de Bragança.",
-    categoria: "Portugal",
-
-    texto: `
-A 4.ª Dinastia de Portugal, também conhecida como Dinastia de Bragança, começou em 1640, após a Restauração da Independência, e terminou em 1910, com a implantação da República.
-
-O primeiro rei desta dinastia foi D. João IV, que foi aclamado rei a 1 de dezembro de 1640.
-
-Portugal teve de lutar para defender a sua independência durante a Guerra da Restauração, que durou de 1640 a 1668. A independência foi finalmente reconhecida por Espanha através do Tratado de Lisboa, em 1668.
-
-Durante esta dinastia, Portugal passou por vários acontecimentos importantes, como o desenvolvimento do Império Português, o terramoto de 1755, as invasões francesas, a ida da família real para o Brasil e a Revolução Liberal de 1820.
-
-Em 1822, o Brasil declarou a independência.
-
-Em 1908, o rei D. Carlos e o príncipe herdeiro D. Luís Filipe foram assassinados.
-
-A 5 de outubro de 1910, foi implantada a República Portuguesa, terminando a monarquia e a Dinastia de Bragança.
-    `,
-
-    imagem: ""
-},
-
-{
-    titulo: "Estado Novo",
-    resumo: "O regime político português entre 1933 e 1974.",
-    categoria: "Portugal",
-
-    texto: `
-O Estado Novo foi um regime autoritário que vigorou em Portugal entre 1933 e 1974. Foi associado principalmente a António de Oliveira Salazar.
-
-O regime limitava as liberdades, controlava a imprensa através da censura e não permitia uma oposição política livre.
-
-A polícia política, inicialmente PVDE e posteriormente PIDE/DGS, perseguia opositores ao regime.
-
-A propaganda era utilizada para divulgar os ideais do Estado Novo.
-
-Portugal manteve uma política colonial em África. A partir de 1961, começaram as guerras coloniais, que tiveram consequências económicas, sociais e políticas.
-
-Marcelo Caetano sucedeu a Salazar em 1968.
-
-O Estado Novo terminou com a Revolução de 25 de Abril de 1974.
-    `,
-
-    imagem: ""
-},
-
-{
-    titulo: "25 de Abril de 1974",
-    resumo: "A Revolução dos Cravos e o fim da ditadura.",
-    categoria: "Portugal",
-
-    texto: `
-O 25 de Abril de 1974 foi uma revolução que pôs fim ao Estado Novo e abriu caminho à democracia em Portugal.
-
-A revolução foi organizada pelo Movimento das Forças Armadas (MFA), composto por militares descontentes com o regime.
-
-No dia 25 de Abril, os militares ocuparam pontos estratégicos em Lisboa e derrubaram o governo.
-
-A revolução ficou conhecida como Revolução dos Cravos, porque muitas pessoas colocaram cravos nos uniformes e nas armas dos militares.
-
-Depois do 25 de Abril, foram restauradas as liberdades fundamentais, a censura foi abolida e os presos políticos foram libertados.
-
-Portugal iniciou também o processo de descolonização.
-
-Em 1976, foi aprovada uma nova Constituição e realizaram-se eleições democráticas.
-    `,
-
-    imagem: ""
-},
-
-{
-    titulo: "Primeira Guerra Mundial",
-    resumo: "O conflito mundial entre 1914 e 1918.",
-    categoria: "Mundo",
-
-    texto: `
-A Primeira Guerra Mundial decorreu entre 1914 e 1918 e envolveu várias potências mundiais.
-
-Entre as principais causas estavam o nacionalismo, o imperialismo, as rivalidades entre países, as alianças militares e a corrida aos armamentos.
-
-O assassinato do arquiduque Francisco Fernando, em Sarajevo, a 28 de junho de 1914, desencadeou uma crise que levou ao início da guerra.
-
-Os principais blocos eram os Aliados e as Potências Centrais.
-
-A guerra foi marcada pelas trincheiras, pela utilização de novas armas e por enormes perdas humanas.
-
-Portugal participou na guerra ao lado dos Aliados.
-
-A guerra terminou a 11 de novembro de 1918, com a assinatura do armistício.
-
-Em 1919, foi assinado o Tratado de Versalhes, que estabeleceu as condições de paz e impôs duras medidas à Alemanha.
-    `,
-
-    imagem: ""
-},
-
-{
-    titulo: "Segunda Guerra Mundial",
-    resumo: "O conflito mundial entre 1939 e 1945.",
-    categoria: "Mundo",
-
-    texto: `
-A Segunda Guerra Mundial decorreu entre 1939 e 1945 e foi um dos conflitos mais devastadores da História.
-
-Entre as causas estavam o expansionismo alemão, o nazismo, o fascismo, o militarismo japonês e as consequências da Primeira Guerra Mundial.
-
-A guerra começou na Europa a 1 de setembro de 1939, quando a Alemanha invadiu a Polónia.
-
-Os principais blocos eram os Aliados e as Potências do Eixo.
-
-Durante a guerra ocorreram grandes batalhas na Europa, África, Ásia e no Pacífico.
-
-O regime nazi perseguiu e assassinou milhões de pessoas, incluindo seis milhões de judeus no Holocausto.
-
-Em 1945, a Alemanha foi derrotada. A guerra terminou após a rendição do Japão.
-
-O conflito provocou milhões de mortes e transformou profundamente o mundo.
-
-Depois da guerra, foi criada a Organização das Nações Unidas (ONU), em 1945, com o objetivo de promover a paz e a cooperação internacional.
-    `,
-
-    imagem: ""
-}
-
-];
-
-// Criar cartões dos temas
-
-function criarCards() {
-
-    const portugal = document.getElementById("listaPortugal");
-    const mundo = document.getElementById("listaMundo");
-
-    portugal.innerHTML = "";
-    mundo.innerHTML = "";
-
-    temas.forEach((tema, numero) => {
-
-        const cartao = document.createElement("div");
-
-        cartao.className = "card";
-
-        cartao.innerHTML = `
-            <h3>${tema.titulo}</h3>
-            <p>${tema.resumo}</p>
-        `;
-
-        cartao.onclick = function() {
-            abrirTema(numero);
-        };
-
-        if (tema.categoria === "Portugal") {
-            portugal.appendChild(cartao);
+// PESQUISA
+function pesquisar() {
+    let texto = document.getElementById("pesquisa").value.toLowerCase();
+    let secoes = document.querySelectorAll("#conteudo section");
+
+    secoes.forEach(function(secao) {
+        if (secao.innerText.toLowerCase().includes(texto)) {
+            secao.style.display = "";
         } else {
-            mundo.appendChild(cartao);
+            secao.style.display = "none";
         }
-
     });
-
 }
 
-// Abrir tema
+// COMENTÁRIOS
+function adicionarComentario() {
+    let nome = document.getElementById("nome").value;
+    let comentario = document.getElementById("comentario").value;
 
-function abrirTema(numero) {
-
-    const tema = temas[numero];
-
-    document.getElementById("listaPortugal").style.display = "none";
-    document.getElementById("listaMundo").style.display = "none";
-    document.querySelector(".search").style.display = "none";
-
-    document.getElementById("artigo").style.display = "block";
-    document.getElementById("editor").style.display = "none";
-
-    document.getElementById("tituloArtigo").innerText = tema.titulo;
-
-    const texto = document.getElementById("textoArtigo");
-
-    texto.innerHTML = "";
-
-    tema.texto.split("\n\n").forEach(paragrafo => {
-
-        const p = document.createElement("p");
-        p.textContent = paragrafo;
-
-        texto.appendChild(p);
-
-    });
-
-    if (tema.imagem) {
-
-        const img = document.createElement("img");
-
-        img.src = tema.imagem;
-        img.alt = tema.titulo;
-
-        texto.prepend(img);
-
+    if (nome === "" || comentario === "") {
+        alert("Preenche o nome e o comentário!");
+        return;
     }
 
-    window.scrollTo(0, 0);
+    let comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
 
-}
-
-// Voltar à lista
-
-function mostrarLista() {
-
-    document.getElementById("artigo").style.display = "none";
-    document.getElementById("editor").style.display = "none";
-
-    document.getElementById("listaPortugal").style.display = "grid";
-    document.getElementById("listaMundo").style.display = "grid";
-
-    document.querySelector(".search").style.display = "block";
-
-    document.getElementById("pesquisa").value = "";
-
-    criarCards();
-
-    window.scrollTo(0, 0);
-
-}
-
-// Pesquisa
-
-function pesquisarTemas() {
-
-    const pesquisa = document.getElementById("pesquisa").value.toLowerCase();
-
-    const portugal = document.getElementById("listaPortugal");
-    const mundo = document.getElementById("listaMundo");
-
-    portugal.innerHTML = "";
-    mundo.innerHTML = "";
-
-    temas.forEach((tema, numero) => {
-
-        const corresponde =
-            tema.titulo.toLowerCase().includes(pesquisa) ||
-            tema.resumo.toLowerCase().includes(pesquisa) ||
-            tema.categoria.toLowerCase().includes(pesquisa);
-
-        if (!corresponde) return;
-
-        const cartao = document.createElement("div");
-
-        cartao.className = "card";
-
-        cartao.innerHTML = `
-            <h3>${tema.titulo}</h3>
-            <p>${tema.resumo}</p>
-        `;
-
-        cartao.onclick = function() {
-            abrirTema(numero);
-        };
-
-        if (tema.categoria === "Portugal") {
-            portugal.appendChild(cartao);
-        } else {
-            mundo.appendChild(cartao);
-        }
-
+    comentarios.push({
+        nome: nome,
+        comentario: comentario
     });
 
+    localStorage.setItem("comentarios", JSON.stringify(comentarios));
+
+    mostrarComentarios();
+
+    document.getElementById("nome").value = "";
+    document.getElementById("comentario").value = "";
 }
 
-// Abrir editor
+function mostrarComentarios() {
+    let comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
+    let lista = document.getElementById("listaComentarios");
 
-let temaAtual = null;
+    lista.innerHTML = "";
 
+    comentarios.forEach(function(c) {
+        let div = document.createElement("div");
+        div.className = "comentario";
+
+        let nome = document.createElement("strong");
+        nome.textContent = c.nome;
+
+        let texto = document.createElement("p");
+        texto.textContent = c.comentario;
+
+        div.appendChild(nome);
+        div.appendChild(texto);
+        lista.appendChild(div);
+    });
+}
+
+mostrarComentarios();
+
+// EDITOR COM PIN
 function abrirEditor() {
+    let pin = prompt("Introduz o PIN para editar:");
 
-    temaAtual = temas[temas.findIndex(
-        tema => tema.titulo === document.getElementById("tituloArtigo").innerText
-    )];
+    if (pin === "5580") {
+        document.getElementById("painelEdicao").style.display = "block";
 
-    document.getElementById("editor").style.display = "block";
+        let conteudo = document.getElementById("conteudo");
 
-    document.getElementById("novoTitulo").value = temaAtual.titulo;
-    document.getElementById("novoResumo").value = temaAtual.resumo;
-    document.getElementById("novoTexto").value = temaAtual.texto;
-
-    document.getElementById("preview").innerHTML = "";
-
-}
-
-// Guardar alterações
-
-function guardarAlteracoes() {
-
-    temaAtual.titulo = document.getElementById("novoTitulo").value;
-    temaAtual.resumo = document.getElementById("novoResumo").value;
-    temaAtual.texto = document.getElementById("novoTexto").value;
-
-    const ficheiro = document.getElementById("imagem").files[0];
-
-    if (ficheiro) {
-
-        const leitor = new FileReader();
-
-        leitor.onload = function() {
-
-            temaAtual.imagem = leitor.result;
-
-            guardarDados();
-
-        };
-
-        leitor.readAsDataURL(ficheiro);
-
+        document.getElementById("editor").value =
+            localStorage.getItem("conteudoEditado") || conteudo.innerHTML;
     } else {
-
-        guardarDados();
-
+        alert("PIN incorreto!");
     }
-
 }
 
-function guardarDados() {
+function guardarEdicao() {
+    let novoConteudo = document.getElementById("editor").value;
 
-    localStorage.setItem("memoriaHistorica", JSON.stringify(temas));
+    localStorage.setItem("conteudoEditado", novoConteudo);
 
-    document.getElementById("editor").style.display = "none";
-
-    abrirTema(temas.indexOf(temaAtual));
+    document.getElementById("conteudo").innerHTML = novoConteudo;
 
     alert("Alterações guardadas!");
 
+    document.getElementById("painelEdicao").style.display = "none";
 }
-
-// Cancelar edição
 
 function cancelarEdicao() {
-
-    document.getElementById("editor").style.display = "none";
-
+    document.getElementById("painelEdicao").style.display = "none";
 }
 
-// Iniciar site
+function restaurarOriginal() {
+    if (confirm("Tens a certeza que queres restaurar o conteúdo original?")) {
+        localStorage.removeItem("conteudoEditado");
+        location.reload();
+    }
+}
 
-criarCards();
+// CARREGAR ALTERAÇÕES
+window.onload = function() {
+    let editado = localStorage.getItem("conteudoEditado");
+
+    if (editado) {
+        document.getElementById("conteudo").innerHTML = editado;
+    }
+
+    mostrarComentarios();
+};
 
 </script>
 
