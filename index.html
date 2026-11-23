@@ -1,570 +1,1078 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>História de Portugal e do Mundo</title>
-
 <style>
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f1ea;
-    color: #252525;
-}
-
-header {
-    background: #263b50;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
-}
-
-nav {
-    background: #172b3d;
-    padding: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
-
-nav a:hover {
-    background: #496780;
-    border-radius: 5px;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
-
-section {
-    background: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px #00000015;
-}
-
-h2 {
-    color: #263b50;
-    border-bottom: 2px solid #c6a76b;
-    padding-bottom: 10px;
-}
-
-h3 {
-    color: #526b80;
-}
-
-img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-input, textarea, button {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-family: Arial;
-}
-
-button {
-    background: #263b50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #496780;
-}
-
-#pesquisa {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-}
-
-.comentario {
-    background: #f1f1f1;
-    padding: 12px;
-    border-radius: 6px;
-    margin-top: 10px;
-}
-
-footer {
-    text-align: center;
-    background: #263b50;
-    color: white;
-    padding: 20px;
-}
-
-#painelEdicao {
-    display: none;
-    background: #fff4d6;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#editor {
-    width: 100%;
-    min-height: 300px;
-}
-
+body{font-family:Georgia,serif;background:#f4efe5;color:#292929;margin:0;line-height:1.8}
+header{background:#54252e;color:white;text-align:center;padding:35px 20px}
+header h1{font-size:2.5em}
+nav{background:#39202a;padding:15px;text-align:center;position:sticky;top:0}
+nav a{color:white;margin:8px;text-decoration:none}
+main{max-width:1100px;margin:auto;padding:25px}
+section{background:white;padding:25px;margin-bottom:25px;border-radius:12px;box-shadow:0 3px 12px #0001}
+h2{color:#742d3d;border-bottom:2px solid #d4ae72;padding-bottom:8px}
+h3{color:#9b5943}
+img{max-width:100%;border-radius:10px}
+input,textarea,button{padding:10px;margin:5px;border-radius:6px;border:1px solid #ccc}
+button{background:#742d3d;color:white;cursor:pointer}
+footer{text-align:center;background:#39202a;color:white;padding:20px}
+#search{width:90%;font-size:18px}
+.comment{background:#eee;padding:12px;margin:10px;border-radius:8px}
 </style>
 </head>
-
 <body>
 
 <header>
-    <h1>História de Portugal e do Mundo</h1>
-    <p>Da formação de Portugal à história contemporânea</p>
+<h1>📚 História de Portugal e do Mundo</h1>
+<p>Da formação de Portugal à História Contemporânea</p>
 </header>
 
 <nav>
-    <a href="#dinastia1">1.ª Dinastia</a>
-    <a href="#dinastia2">2.ª Dinastia</a>
-    <a href="#dinastia3">3.ª Dinastia</a>
-    <a href="#dinastia4">4.ª Dinastia</a>
-    <a href="#estadoNovo">Estado Novo</a>
-    <a href="#abril">25 de Abril</a>
-    <a href="#ww1">1.ª Guerra Mundial</a>
-    <a href="#ww2">2.ª Guerra Mundial</a>
+<a href="#dinastias">Dinastias</a>
+<a href="#guerra1">1.ª Guerra Mundial</a>
+<a href="#guerra2">2.ª Guerra Mundial</a>
+<a href="#estado">Estado Novo</a>
+<a href="#abril">25 de Abril</a>
 </nav>
 
-<div class="container">
+<main>
 
-<input type="text" id="pesquisa" placeholder="Pesquisar na História..." onkeyup="pesquisar()">
+<input id="search" placeholder="🔎 Pesquisar História..." onkeyup="pesquisar()">
 
 <div id="conteudo">
 
-<!-- 1. DINASTIA -->
+<section id="dinastias">
+<h2>As Dinastias Portuguesas</h2>
 
-<section id="dinastia1">
-<h2>1.ª Dinastia — Dinastia de Borgonha</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Portugal_1143-1185.svg/800px-Portugal_1143-1185.svg.png" alt="Mapa de Portugal durante a formação do reino">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Portugal_1143.svg/800px-Portugal_1143.svg.png" alt="Portugal na época da formação">
+<h2>1.ª Dinastia — Dinastia de Borgonha (1143–1383)</h2>
 
-<h3>Formação de Portugal</h3>
+<p>A 1.ª Dinastia, também conhecida como Dinastia de Borgonha ou Dinastia Afonsina, foi a primeira dinastia portuguesa. Começou com D. Afonso Henriques e terminou com D. Fernando I, em 1383.</p>
 
-<p>
-A primeira dinastia portuguesa começou com D. Afonso Henriques,
-que se tornou o primeiro rei de Portugal. A independência foi
-reconhecida em 1143, através do Tratado de Zamora.
-</p>
+<p>Durante esta dinastia, Portugal conquistou a independência, alargou o seu território até ao Algarve, estabeleceu fronteiras e desenvolveu a agricultura, o comércio e a organização do reino.</p>
 
-<h3>D. Afonso Henriques</h3>
-<p>
-D. Afonso Henriques lutou pela independência do território
-português e conquistou várias terras aos muçulmanos.
-É considerado o fundador de Portugal.
-</p>
+<h3>D. Afonso Henriques (1143–1185)</h3>
+<p>D. Afonso Henriques foi o primeiro rei de Portugal e ficou conhecido como O Conquistador. Era filho de D. Henrique de Borgonha e de D. Teresa.</p>
+<p>Em 1128, venceu a Batalha de São Mamede, assumindo o controlo do Condado Portucalense. O seu principal objetivo era tornar o território independente do Reino de Leão.</p>
+<p>Em 1139, venceu a Batalha de Ourique, contra forças muçulmanas, sendo posteriormente aclamado rei.</p>
+<p>Em 1143, o Tratado de Zamora reconheceu a independência de Portugal.</p>
+<p>Durante o seu reinado, conquistou várias cidades aos Muçulmanos, incluindo Santarém e Lisboa, em 1147, com a ajuda de cruzados que se dirigiam à Terra Santa.</p>
+<p>A conquista de Lisboa foi especialmente importante, pois permitiu aumentar o território e fortalecer o reino.</p>
+<p>D. Afonso Henriques morreu em 1185, sendo sucedido pelo seu filho D. Sancho I.</p>
 
-<h3>Principais acontecimentos</h3>
+<h3>D. Sancho I (1185–1211)</h3>
+<p>D. Sancho I foi filho de D. Afonso Henriques e ficou conhecido como O Povoador.</p>
+<p>Durante o seu reinado, procurou desenvolver e povoar o território português, incentivando a agricultura, a construção de cidades e o crescimento económico.</p>
+<p>Conquistou Silves, no Algarve, em 1189, com o apoio de cruzados, mas perdeu posteriormente algumas posições conquistadas.</p>
+<p>Promoveu a criação de povoações e concedeu cartas de foral, documentos que estabeleciam direitos, deveres e regras para as comunidades.</p>
+<p>Estas medidas ajudaram a desenvolver as regiões e a organizar o território.</p>
+<p>D. Sancho I morreu em 1211, sendo sucedido pelo seu filho D. Afonso II.</p>
+
+<h3>D. Afonso II (1211–1223)</h3>
+<p>D. Afonso II foi filho de D. Sancho I e ficou conhecido como O Gordo.</p>
+<p>O seu reinado ficou marcado pela preocupação com a organização administrativa, a legislação e a centralização do poder do rei.</p>
+<p>Em 1211, foram realizadas Cortes em Coimbra, onde foram tomadas decisões importantes para a organização do reino.</p>
+<p>D. Afonso II procurou limitar alguns privilégios da nobreza e fortalecer a autoridade real.</p>
+<p>Durante o seu reinado, os Portugueses participaram também em campanhas militares contra os Muçulmanos, embora a administração do reino tenha sido uma das suas principais preocupações.</p>
+<p>Morreu em 1223, sendo sucedido pelo seu filho D. Sancho II.</p>
+
+<h3>D. Sancho II (1223–1248)</h3>
+<p>D. Sancho II foi filho de D. Afonso II e ficou conhecido como O Capelo.</p>
+<p>Durante o seu reinado, Portugal conquistou importantes territórios no Alentejo e no Algarve, aumentando o território português.</p>
+<p>No entanto, o seu governo enfrentou conflitos com a Igreja, a nobreza e outros grupos, provocando instabilidade política.</p>
+<p>Em 1245, o Papa declarou que D. Sancho II deveria ser afastado do governo e nomeou o seu irmão D. Afonso como regente.</p>
+<p>D. Sancho II acabou por abandonar Portugal e morreu em Toledo, em 1248.</p>
+
+<h3>D. Afonso III (1248–1279)</h3>
+<p>D. Afonso III foi irmão de D. Sancho II e ficou conhecido como O Bolonhês.</p>
+<p>Durante o seu reinado, terminou a conquista do Algarve, em 1249, completando a reconquista do território português aos Muçulmanos.</p>
+<p>Em 1255, transferiu a capital de Coimbra para Lisboa, devido à importância económica, política e estratégica da cidade.</p>
+<p>Em 1254, realizou Cortes em Leiria, onde participaram representantes dos concelhos, aumentando a participação de outros grupos sociais nas decisões do reino.</p>
+<p>Promoveu também a organização administrativa, o desenvolvimento económico e a consolidação das fronteiras.</p>
+<p>D. Afonso III morreu em 1279, sendo sucedido pelo seu filho D. Dinis.</p>
+
+<h3>D. Dinis (1279–1325)</h3>
+<p>D. Dinis foi filho de D. Afonso III e ficou conhecido como O Lavrador.</p>
+<p>Durante o seu reinado, Portugal desenvolveu a agricultura, o comércio, a cultura e a administração.</p>
+<p>Promoveu a plantação do Pinhal de Leiria, que ajudava a proteger os terrenos e fornecia madeira utilizada na construção naval.</p>
+<p>Em 1290, fundou a Universidade de Lisboa, que mais tarde foi transferida para Coimbra.</p>
+<p>Em 1297, assinou o Tratado de Alcanizes com Castela, que estabeleceu grande parte das fronteiras portuguesas e ajudou a consolidar o território.</p>
+<p>D. Dinis também incentivou a utilização da língua portuguesa nos documentos oficiais e promoveu a cultura.</p>
+<p>Morreu em 1325, sendo sucedido pelo seu filho D. Afonso IV.</p>
+
+<h3>D. Afonso IV (1325–1357)</h3>
+<p>D. Afonso IV foi filho de D. Dinis e ficou conhecido como O Bravo.</p>
+<p>Durante o seu reinado, Portugal enfrentou conflitos internos e dificuldades económicas.</p>
+<p>Em 1340, participou na Batalha do Salado, ao lado de Castela, contra os Muçulmanos, conseguindo uma importante vitória.</p>
+<p>O seu reinado também ficou marcado pela história de D. Inês de Castro e D. Pedro, que provocou conflitos familiares e políticos.</p>
+<p>D. Inês de Castro foi assassinada em 1355, por ordem de pessoas ligadas à corte, durante o reinado de D. Afonso IV.</p>
+<p>D. Afonso IV morreu em 1357, sendo sucedido pelo seu filho D. Pedro I.</p>
+
+<h3>D. Pedro I (1357–1367)</h3>
+<p>D. Pedro I foi filho de D. Afonso IV e ficou conhecido como O Justiceiro.</p>
+<p>O seu reinado ficou marcado pela aplicação da justiça e pela tentativa de combater abusos dos nobres.</p>
+<p>É conhecido pela história de amor com D. Inês de Castro, que foi assassinada durante o reinado do seu pai.</p>
+<p>Segundo a tradição, D. Pedro afirmou ter mandado coroar D. Inês depois da sua morte, embora este episódio seja associado à lenda.</p>
+<p>D. Pedro I procurou garantir a justiça e reforçar a autoridade real.</p>
+<p>Morreu em 1367, sendo sucedido pelo seu filho D. Fernando I.</p>
+
+<h3>D. Fernando I (1367–1383)</h3>
+<p>D. Fernando I foi filho de D. Pedro I e ficou conhecido como O Formoso.</p>
+<p>Durante o seu reinado, Portugal enfrentou conflitos com Castela, conhecidos como Guerras Fernandinas, devido a disputas pelo trono castelhano.</p>
+<p>D. Fernando procurou desenvolver o comércio, a agricultura e a defesa do reino. Também promoveu a construção de muralhas e a proteção das cidades.</p>
+<p>Em 1383, morreu sem deixar um herdeiro masculino.</p>
+<p>A sua filha D. Beatriz estava casada com o rei de Castela, o que levantou o receio de Portugal perder a independência.</p>
+<p>Esta situação deu origem à crise de 1383–1385, que terminou com a vitória de D. João, Mestre de Avis, e o início da 2.ª Dinastia.</p>
+
+<h3>A importância da 1.ª Dinastia</h3>
+<p>A 1.ª Dinastia foi fundamental para a formação e consolidação de Portugal como reino independente.</p>
+<p>Durante este período, Portugal conquistou a independência, alargou o território até ao Algarve, estabeleceu fronteiras com Castela e desenvolveu a agricultura, o comércio, a administração e a cultura.</p>
+<p>O seu fim, em 1383, provocou uma crise de sucessão que levou à Revolução de Avis e ao início de uma nova dinastia.</p>
+
+<h3>Cronologia da 1.ª Dinastia</h3>
 <ul>
-<li>1143 — Tratado de Zamora.</li>
-<li>1179 — Bula Manifestis Probatum.</li>
-<li>Conquista de territórios para sul.</li>
-<li>Desenvolvimento e consolidação do reino.</li>
+<li>1128 — Batalha de São Mamede.</li>
+<li>1139 — Batalha de Ourique e aclamação de D. Afonso Henriques.</li>
+<li>1143 — Tratado de Zamora e reconhecimento da independência.</li>
+<li>1147 — Conquista de Santarém e Lisboa.</li>
+<li>1185 — Morte de D. Afonso Henriques.</li>
+<li>1189 — Conquista de Silves.</li>
+<li>1211 — Subida ao trono de D. Afonso II.</li>
+<li>1223 — Subida ao trono de D. Sancho II.</li>
+<li>1245 — D. Sancho II é afastado do governo.</li>
+<li>1249 — Conquista do Algarve por D. Afonso III.</li>
+<li>1255 — Lisboa passa a ser a capital.</li>
+<li>1279 — Subida ao trono de D. Dinis.</li>
+<li>1290 — Fundação da Universidade de Lisboa.</li>
+<li>1297 — Tratado de Alcanizes.</li>
+<li>1325 — Subida ao trono de D. Afonso IV.</li>
+<li>1340 — Batalha do Salado.</li>
+<li>1357 — Subida ao trono de D. Pedro I.</li>
+<li>1367 — Subida ao trono de D. Fernando I.</li>
+<li>1383 — Morte de D. Fernando I e início da crise de sucessão.</li>
 </ul>
-</section>
 
-<!-- 2. DINASTIA -->
+<h2>Capítulo 2 — A 2.ª Dinastia e os Descobrimentos Portugueses</h2>
 
-<section id="dinastia2">
-<h2>2.ª Dinastia — Dinastia de Avis</h2>
+<h3>A crise de 1383–1385</h3>
+<p>Após a morte de D. Fernando I, em 1383, Portugal enfrentou uma crise de sucessão. A sua filha, D. Beatriz, era casada com o rei de Castela, e muitos portugueses receavam que Portugal perdesse a independência.</p>
+<p>D. João, Mestre de Avis, filho ilegítimo de D. Pedro I, tornou-se uma das principais figuras da resistência contra Castela.</p>
+<p>Em dezembro de 1383, o Mestre de Avis liderou uma revolta em Lisboa, durante a qual Miguel de Vasconcelos, representante do governo, foi morto. A cidade apoiou D. João.</p>
+<p>Em 1385, foram realizadas Cortes em Coimbra, onde D. João foi escolhido e aclamado rei.</p>
+<p>Nesse mesmo ano, ocorreu a Batalha de Aljubarrota, onde o exército português, comandado por D. João I e Nuno Álvares Pereira, derrotou o exército castelhano.</p>
+<p>A vitória garantiu a independência portuguesa e iniciou a Dinastia de Avis.</p>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Portuguese_discoveries.png/800px-Portuguese_discoveries.png" alt="Descobrimentos portugueses">
+<h2>2.ª Dinastia — Dinastia de Avis (1385–1580)</h2>
+<p>A 2.ª Dinastia, conhecida como Dinastia de Avis, começou em 1385, com D. João I, e terminou em 1580, com a morte de D. Henrique.</p>
+<p>Foi um dos períodos mais importantes da História de Portugal, marcado pelos Descobrimentos, pela expansão marítima, pelo desenvolvimento do comércio e pela construção do Império Português.</p>
 
-<h3>Revolução de 1383-1385</h3>
-<p>
-A crise de sucessão portuguesa levou à Revolução de 1383-1385.
-D. João, Mestre de Avis, foi escolhido como rei.
-</p>
+<h3>D. João I (1385–1433)</h3>
+<p>D. João I foi o fundador da Dinastia de Avis e ficou conhecido como O de Boa Memória.</p>
+<p>Era filho ilegítimo de D. Pedro I e foi escolhido para rei durante a crise de 1383–1385.</p>
+<p>Em 1385, foi aclamado rei nas Cortes de Coimbra.</p>
+<p>Nesse mesmo ano, ocorreu a Batalha de Aljubarrota, onde os Portugueses derrotaram o exército castelhano, garantindo a independência.</p>
+<p>Em 1386, Portugal assinou o Tratado de Windsor com Inglaterra, reforçando a aliança entre os dois países.</p>
+<p>Em 1415, iniciou-se a expansão marítima portuguesa com a conquista de Ceuta, no Norte de África. Esta conquista foi importante para o comércio, para a expansão militar e para a procura de novas rotas.</p>
+<p>D. João I morreu em 1433, sendo sucedido pelo seu filho D. Duarte.</p>
 
-<h3>D. João I</h3>
-<p>
-D. João I iniciou a Dinastia de Avis e consolidou a independência
-portuguesa depois da vitória na Batalha de Aljubarrota, em 1385.
-</p>
+<h3>D. Duarte (1433–1438)</h3>
+<p>D. Duarte foi filho de D. João I e ficou conhecido como O Eloquente.</p>
+<p>Durante o seu curto reinado, procurou desenvolver a justiça, a administração e a cultura.</p>
+<p>Em 1437, organizou uma expedição militar para conquistar Tânger, no Norte de África, mas a campanha foi um fracasso.</p>
+<p>O seu irmão D. Fernando ficou prisioneiro dos Mouros e acabou por morrer em cativeiro.</p>
+<p>D. Duarte morreu em 1438, sendo sucedido pelo seu filho D. Afonso V.</p>
 
-<h3>Os Descobrimentos</h3>
-<p>
-Portugal iniciou a expansão marítima, explorando novas rotas
-comerciais e territórios. Os navegadores portugueses contribuíram
-para a expansão do conhecimento geográfico.
-</p>
+<h3>D. Afonso V (1438–1481)</h3>
+<p>D. Afonso V foi filho de D. Duarte e ficou conhecido como O Africano, devido às conquistas portuguesas no Norte de África.</p>
+<p>Durante o seu reinado, Portugal continuou a expansão marítima e as conquistas em África.</p>
+<p>Foram conquistadas várias cidades no Norte de África, incluindo Alcácer Ceguer, em 1458, Tânger, em 1471, e Arzila, também em 1471.</p>
+<p>Durante este período, os navegadores portugueses exploraram a costa africana, procurando novas rotas comerciais, riquezas e oportunidades de expansão.</p>
+<p>D. Afonso V morreu em 1481, sendo sucedido pelo seu filho D. João II.</p>
 
+<h3>D. João II (1481–1495)</h3>
+<p>D. João II ficou conhecido como O Príncipe Perfeito.</p>
+<p>Durante o seu reinado, reforçou o poder do rei e diminuiu a influência da nobreza, procurando centralizar a autoridade.</p>
+<p>Foi um dos principais responsáveis pelo desenvolvimento dos Descobrimentos Portugueses, apoiando a exploração da costa africana e a procura de uma rota marítima para a Índia.</p>
+<p>Em 1488, Bartolomeu Dias dobrou o Cabo da Boa Esperança, demonstrando que era possível chegar ao Oceano Índico através do sul de África.</p>
+<p>Em 1494, foi assinado o Tratado de Tordesilhas entre Portugal e Espanha, que dividiu as terras descobertas e por descobrir entre os dois países.</p>
+<p>D. João II morreu em 1495, sendo sucedido pelo seu primo e cunhado D. Manuel I.</p>
+
+<h3>D. Manuel I (1495–1521)</h3>
+<p>D. Manuel I ficou conhecido como O Venturoso.</p>
+<p>O seu reinado foi marcado pelo grande desenvolvimento dos Descobrimentos Portugueses e pela expansão do Império.</p>
+<p>Em 1498, Vasco da Gama chegou à Índia por via marítima, estabelecendo uma nova rota comercial entre Portugal e o Oriente.</p>
+<p>Em 1500, Pedro Álvares Cabral chegou ao Brasil, que passou a fazer parte do Império Português.</p>
+<p>Durante o seu reinado, Portugal desenvolveu o comércio das especiarias, do ouro e de outros produtos, tornando-se uma importante potência marítima e comercial.</p>
+<p>D. Manuel I também promoveu grandes obras, como o Mosteiro dos Jerónimos e a Torre de Belém, símbolos da riqueza e do poder português.</p>
+<p>Morreu em 1521, sendo sucedido pelo seu filho D. João III.</p>
+
+<h3>D. João III (1521–1557)</h3>
+<p>D. João III foi filho de D. Manuel I e ficou conhecido como O Piedoso.</p>
+<p>Durante o seu reinado, Portugal continuou a desenvolver o seu império, mas enfrentou dificuldades na administração dos territórios ultramarinos.</p>
+<p>Em 1534, foi implementado o sistema de capitanias hereditárias no Brasil, para organizar a colonização e a defesa do território.</p>
+<p>Em 1549, foi criado o Governo-Geral do Brasil, com o objetivo de centralizar a administração da colónia.</p>
+<p>Durante o seu reinado, a Inquisição foi estabelecida em Portugal, em 1536, contribuindo para a perseguição de pessoas acusadas de heresia, especialmente cristãos-novos.</p>
+<p>D. João III morreu em 1557, sendo sucedido pelo seu neto D. Sebastião.</p>
+
+<h3>D. Sebastião (1557–1578)</h3>
+<p>D. Sebastião foi neto de D. João III e ficou conhecido como O Desejado.</p>
+<p>Subiu ao trono ainda criança, sendo inicialmente governado por regentes.</p>
+<p>Durante o seu reinado, demonstrou grande interesse pela conquista de territórios no Norte de África e pela expansão do cristianismo.</p>
+<p>Em 1578, organizou uma expedição militar para Marrocos, que terminou na Batalha de Alcácer-Quibir.</p>
+<p>O exército português foi derrotado e D. Sebastião desapareceu durante a batalha, sendo considerado morto.</p>
+<p>A sua morte provocou uma grave crise de sucessão, pois não deixou descendentes.</p>
+<p>D. Sebastião tornou-se uma figura lendária, dando origem ao Sebastianismo, uma crença de que regressaria para salvar Portugal.</p>
+
+<h3>D. Henrique (1578–1580)</h3>
+<p>D. Henrique foi tio-avô de D. Sebastião e ficou conhecido como O Casto.</p>
+<p>Era cardeal e tornou-se rei após o desaparecimento de D. Sebastião na Batalha de Alcácer-Quibir.</p>
+<p>Durante o seu reinado, tentou resolver a crise de sucessão, mas não conseguiu garantir um herdeiro para o trono português.</p>
+<p>Após a sua morte, em 1580, vários pretendentes disputaram o trono, incluindo Filipe II de Espanha, D. António, Prior do Crato, e D. Catarina de Bragança.</p>
+<p>A crise de sucessão terminou com a vitória de Filipe II de Espanha, que passou a governar Portugal como D. Filipe I, iniciando a 3.ª Dinastia.</p>
+
+<h3>Os Descobrimentos Portugueses</h3>
+<p>Os Descobrimentos Portugueses foram um conjunto de viagens marítimas e explorações realizadas principalmente durante os séculos XV e XVI.</p>
+<p>Portugal procurava novas rotas comerciais para chegar à Índia e ao Oriente, obter especiarias, ouro e outros produtos, expandir o cristianismo e aumentar o poder da monarquia.</p>
+<p>A conquista de Ceuta, em 1415, marcou o início da expansão portuguesa.</p>
+<p>Os navegadores exploraram progressivamente a costa africana, chegando a diferentes regiões e estabelecendo feitorias comerciais.</p>
+<p>Entre os principais navegadores destacam-se:</p>
 <ul>
-<li>1415 — Conquista de Ceuta.</li>
-<li>Descoberta da Madeira e dos Açores.</li>
-<li>1488 — Bartolomeu Dias contorna o Cabo da Boa Esperança.</li>
-<li>1498 — Vasco da Gama chega à Índia.</li>
+<li>Gil Eanes — ultrapassou o Cabo Bojador, em 1434.</li>
+<li>Diogo Cão — explorou a costa africana e chegou à região do rio Congo.</li>
+<li>Bartolomeu Dias — dobrou o Cabo da Boa Esperança, em 1488.</li>
+<li>Vasco da Gama — chegou à Índia por via marítima, em 1498.</li>
+<li>Pedro Álvares Cabral — chegou ao Brasil, em 1500.</li>
+</ul>
+<p>Os Descobrimentos contribuíram para o crescimento do comércio, para a expansão territorial e para a criação de um império que se estendia por vários continentes.</p>
+<p>No entanto, também estiveram associados à colonização, à escravatura, à exploração de populações e à violência exercida sobre muitos povos.</p>
+
+<h3>A importância da 2.ª Dinastia</h3>
+<p>A Dinastia de Avis foi um período muito importante da História de Portugal, pois marcou o início e o desenvolvimento dos Descobrimentos Portugueses e da expansão marítima.</p>
+<p>Durante esta dinastia, Portugal conquistou Ceuta, explorou a costa africana, chegou à Índia por via marítima e descobriu o Brasil.</p>
+<p>O país tornou-se uma grande potência marítima e comercial, criando um vasto império ultramarino.</p>
+<p>O fim desta dinastia, em 1580, provocou uma crise de sucessão que levou à perda da independência portuguesa durante 60 anos, com o início da Dinastia Filipina.</p>
+
+<h3>Cronologia da 2.ª Dinastia</h3>
+<ul>
+<li>1383 — Morte de D. Fernando I e início da crise de sucessão.</li>
+<li>1385 — Aclamação de D. João I nas Cortes de Coimbra e Batalha de Aljubarrota.</li>
+<li>1386 — Assinatura do Tratado de Windsor com Inglaterra.</li>
+<li>1415 — Conquista de Ceuta e início da expansão marítima portuguesa.</li>
+<li>1437 — Expedição a Tânger, que termina em fracasso.</li>
+<li>1458 — Conquista de Alcácer Ceguer.</li>
+<li>1471 — Conquista de Arzila e Tânger.</li>
+<li>1481 — Subida ao trono de D. João II.</li>
+<li>1488 — Bartolomeu Dias dobra o Cabo da Boa Esperança.</li>
+<li>1494 — Assinatura do Tratado de Tordesilhas.</li>
+<li>1495 — Subida ao trono de D. Manuel I.</li>
+<li>1498 — Vasco da Gama chega à Índia por via marítima.</li>
 <li>1500 — Pedro Álvares Cabral chega ao Brasil.</li>
+<li>1521 — Subida ao trono de D. João III.</li>
+<li>1534 — Criação das capitanias hereditárias no Brasil.</li>
+<li>1536 — Estabelecimento da Inquisição em Portugal.</li>
+<li>1549 — Criação do Governo-Geral do Brasil.</li>
+<li>1557 — Subida ao trono de D. Sebastião.</li>
+<li>1578 — Batalha de Alcácer-Quibir e desaparecimento de D. Sebastião.</li>
+<li>1578 — D. Henrique torna-se rei.</li>
+<li>1580 — Morte de D. Henrique e início da crise de sucessão; Filipe II de Espanha torna-se rei de Portugal como D. Filipe I, iniciando a 3.ª Dinastia.</li>
 </ul>
-</section>
 
-<!-- 3. DINASTIA -->
+<h2>Capítulo 3 — A 3.ª Dinastia e a União Ibérica</h2>
 
-<section id="dinastia3">
-<h2>3.ª Dinastia — Dinastia Filipina</h2>
+<h3>A crise de sucessão de 1580</h3>
+<p>Após a morte de D. Sebastião, em 1578, na Batalha de Alcácer-Quibir, Portugal ficou sem herdeiro direto ao trono.</p>
+<p>D. Henrique, tio-avô de D. Sebastião, tornou-se rei, mas morreu em 1580 sem deixar descendentes.</p>
+<p>A morte de D. Henrique provocou uma crise de sucessão. Entre os principais pretendentes ao trono estavam Filipe II de Espanha, neto de D. Manuel I, D. António, Prior do Crato, e D. Catarina de Bragança.</p>
+<p>Filipe II de Espanha tinha fortes direitos ao trono português devido à sua ligação familiar. Em 1580, as tropas espanholas, comandadas pelo duque de Alba, derrotaram as forças de D. António na Batalha de Alcântara.</p>
+<p>Em 1581, Filipe II de Espanha foi reconhecido como rei de Portugal pelas Cortes de Tomar, passando a chamar-se D. Filipe I.</p>
+<p>Começou assim a 3.ª Dinastia, também conhecida como Dinastia Filipina.</p>
 
-<h3>União Ibérica</h3>
-<p>
-Em 1580, Portugal passou a ser governado pelos reis espanhóis,
-iniciando a União Ibérica.
-</p>
+<h2>3.ª Dinastia — Dinastia Filipina (1580–1640)</h2>
+<p>A 3.ª Dinastia foi o período em que Portugal e Espanha tiveram o mesmo rei, entre 1580 e 1640.</p>
+<p>Esta união ficou conhecida como União Ibérica.</p>
+<p>Portugal manteve inicialmente as suas leis, instituições, moeda e administração, de acordo com os compromissos assumidos nas Cortes de Tomar. No entanto, ao longo do tempo, a autonomia portuguesa foi sendo enfraquecida.</p>
+<p>Os ataques dos Holandeses e Ingleses aos territórios portugueses no estrangeiro aumentaram, provocando dificuldades económicas e militares.</p>
+<p>O descontentamento da população e da nobreza cresceu, levando à Restauração da Independência, em 1640.</p>
 
-<h3>Reis</h3>
+<h3>D. Filipe I (1580–1598)</h3>
+<p>D. Filipe I, também conhecido como Filipe II de Espanha, foi o primeiro rei da Dinastia Filipina.</p>
+<p>Era filho do imperador Carlos V e neto de D. Manuel I, o que lhe dava direitos à sucessão do trono português.</p>
+<p>Em 1580, as tropas espanholas, comandadas pelo duque de Alba, derrotaram as forças de D. António, Prior do Crato, na Batalha de Alcântara, perto de Lisboa.</p>
+<p>D. António também reivindicava o trono português, mas acabou por ser derrotado e continuou a resistir durante algum tempo, sobretudo nos Açores.</p>
+<p>Em 1581, D. Filipe I foi reconhecido como rei de Portugal pelas Cortes de Tomar.</p>
+<p>Nessa ocasião, comprometeu-se a respeitar a autonomia portuguesa através do chamado Pacto de Tomar. Ficou estabelecido que Portugal manteria as suas leis, instituições, moeda e administração, e que os cargos do governo português deveriam ser ocupados por portugueses.</p>
+<p>Durante o seu reinado, D. Filipe I procurou manter o apoio dos portugueses e respeitar os compromissos assumidos.</p>
+<p>Contudo, a união das duas coroas também trouxe consequências para Portugal. Como Espanha tinha vários inimigos, os territórios portugueses passaram a ser alvo de ataques de potências como a Inglaterra e os Países Baixos.</p>
+<p>Um dos acontecimentos importantes deste período foi a derrota da Armada Invencível, em 1588, uma grande frota organizada pela monarquia espanhola para atacar a Inglaterra.</p>
+<p>A derrota enfraqueceu a posição marítima espanhola e teve consequências para os interesses portugueses, uma vez que Portugal partilhava o mesmo monarca.</p>
+<p>D. Filipe I morreu em 1598, sendo sucedido pelo seu filho.</p>
+
+<h3>D. Filipe II (1598–1621)</h3>
+<p>D. Filipe II, que em Espanha era conhecido como Filipe III, era filho de D. Filipe I e tornou-se rei de Portugal em 1598.</p>
+<p>Durante o seu reinado, Portugal começou a sentir de forma mais evidente as consequências da União Ibérica.</p>
+<p>O rei passava grande parte do tempo em Espanha e confiava a administração dos seus territórios a representantes e governadores.</p>
+<p>Em 1603, foram publicadas as Ordenações Filipinas, uma importante compilação de leis que organizou e reuniu a legislação do reino. Estas ordenações tiveram uma influência muito duradoura no sistema jurídico português.</p>
+<p>Durante este período, os ataques dos Holandeses e Ingleses aos territórios portugueses no estrangeiro tornaram-se mais frequentes.</p>
+<p>Como Portugal e Espanha estavam unidos sob o mesmo monarca, os inimigos de Espanha passaram também a atacar as possessões portuguesas, prejudicando o comércio e o Império Português.</p>
+<p>Em 1619, D. Filipe II visitou Portugal, sendo recebido em Lisboa. Esta visita procurava reforçar a ligação entre o rei e o reino português, mas não conseguiu eliminar o descontentamento que começava a crescer.</p>
+<p>O aumento dos impostos, as dificuldades económicas e a perda de influência portuguesa na administração contribuíram para o descontentamento da população.</p>
+<p>D. Filipe II morreu em 1621, sendo sucedido pelo seu filho.</p>
+
+<h3>D. Filipe III (1621–1640)</h3>
+<p>D. Filipe III, conhecido em Espanha como Filipe IV, foi o último rei da Dinastia Filipina em Portugal.</p>
+<p>Era filho de D. Filipe II e subiu ao trono em 1621.</p>
+<p>Durante o seu reinado, a situação portuguesa agravou-se. O rei e os seus conselheiros procuraram reforçar o poder central e aumentar os recursos financeiros da monarquia espanhola, o que levou a um maior desrespeito pela autonomia portuguesa prometida nas Cortes de Tomar.</p>
+<p>Um dos principais conselheiros do rei foi o Conde-Duque de Olivares, que defendia uma maior união política e financeira dos territórios governados pela monarquia espanhola.</p>
+<p>Estas políticas provocaram grande descontentamento em Portugal, sobretudo devido ao aumento dos impostos e às exigências militares.</p>
+<p>Ao mesmo tempo, os ataques dos Holandeses aos territórios portugueses continuaram.</p>
+<p>Em 1624, os Holandeses ocuparam Salvador da Baía, no Brasil, mas foram expulsos em 1625 por uma expedição militar luso-espanhola.</p>
+<p>Em 1630, os Holandeses invadiram Pernambuco, iniciando uma ocupação de parte do Nordeste brasileiro que só terminaria em 1654.</p>
+<p>A perda de territórios e as dificuldades económicas prejudicaram o comércio português e aumentaram a insatisfação da população.</p>
+<p>Em 1637, ocorreu a Revolta do Manuelinho, em Évora, uma revolta popular contra o aumento dos impostos e as dificuldades económicas. A revolta foi reprimida pelas autoridades, mas demonstrou o crescente descontentamento dos portugueses com o governo filipino.</p>
+<p>A situação política tornou-se ainda mais instável em 1640, quando também ocorreu uma revolta na Catalunha contra o domínio espanhol.</p>
+<p>A monarquia espanhola enfrentava dificuldades em diferentes territórios, o que criou uma oportunidade para os nobres portugueses organizarem uma revolta para recuperar a independência.</p>
+
+<h3>A Restauração da Independência — 1 de dezembro de 1640</h3>
+<p>O descontentamento contra o domínio filipino aumentou ao longo dos anos, levando um grupo de nobres portugueses a organizar uma conspiração para recuperar a independência de Portugal.</p>
+<p>A 1 de dezembro de 1640, um grupo de conspiradores entrou no Paço da Ribeira, em Lisboa, e derrubou o governo espanhol.</p>
+<p>Durante o golpe, Miguel de Vasconcelos, secretário de Estado considerado um dos principais representantes do governo filipino em Portugal, foi morto.</p>
+<p>A duquesa de Mântua, que representava o rei espanhol no governo português, foi detida.</p>
+<p>Depois da revolta, D. João, Duque de Bragança, foi aclamado rei de Portugal, passando a chamar-se D. João IV.</p>
+<p>Começou assim uma nova dinastia, a 4.ª Dinastia — Dinastia de Bragança.</p>
+<p>A recuperação da independência não foi imediatamente reconhecida por Espanha. Seguiu-se a Guerra da Restauração, que durou de 1640 a 1668, durante a qual Portugal teve de defender a sua independência contra as tentativas espanholas de recuperar o controlo do reino.</p>
+<p>A independência portuguesa foi finalmente reconhecida por Espanha em 1668, através do Tratado de Lisboa.</p>
+
+<h3>A importância da 3.ª Dinastia</h3>
+<p>A 3.ª Dinastia foi um período muito importante da História de Portugal, pois representou a perda da independência política durante 60 anos, entre 1580 e 1640.</p>
+<p>Apesar de Portugal ter mantido inicialmente as suas próprias leis e instituições, a autonomia portuguesa foi sendo progressivamente enfraquecida.</p>
+<p>Os ataques aos territórios ultramarinos, as dificuldades económicas, o aumento dos impostos e o desrespeito pelos compromissos assumidos nas Cortes de Tomar contribuíram para o descontentamento da população.</p>
+<p>O fim desta dinastia, em 1640, marcou a recuperação da independência portuguesa e o início da Dinastia de Bragança.</p>
+
+<h3>Cronologia da 3.ª Dinastia</h3>
 <ul>
-<li>Filipe I</li>
-<li>Filipe II</li>
-<li>Filipe III</li>
+<li>1578 — Desaparecimento de D. Sebastião na Batalha de Alcácer-Quibir.</li>
+<li>1578 — D. Henrique torna-se rei.</li>
+<li>1580 — Morte de D. Henrique e início da crise de sucessão.</li>
+<li>1580 — Batalha de Alcântara e vitória das forças de Filipe II de Espanha.</li>
+<li>1581 — D. Filipe I é reconhecido como rei de Portugal nas Cortes de Tomar.</li>
+<li>1588 — Derrota da Armada Invencível.</li>
+<li>1598 — Morte de D. Filipe I e subida ao trono de D. Filipe II.</li>
+<li>1603 — Publicação das Ordenações Filipinas.</li>
+<li>1619 — Visita de D. Filipe II a Portugal.</li>
+<li>1621 — Morte de D. Filipe II e subida ao trono de D. Filipe III.</li>
+<li>1624 — Ocupação holandesa de Salvador da Baía.</li>
+<li>1625 — Recuperação de Salvador da Baía pelas forças luso-espanholas.</li>
+<li>1630 — Invasão holandesa de Pernambuco.</li>
+<li>1637 — Revolta do Manuelinho, em Évora.</li>
+<li>1640 — Restauração da Independência e aclamação de D. João IV.</li>
+<li>1668 — Reconhecimento da independência portuguesa por Espanha, através do Tratado de Lisboa.</li>
 </ul>
 
-<h3>Restauração da Independência</h3>
-<p>
-Em 1 de dezembro de 1640, Portugal recuperou a independência,
-com a revolução que colocou D. João IV no trono.
-</p>
-</section>
+<h2>Capítulo 4 — A 4.ª Dinastia e as grandes transformações de Portugal</h2>
 
-<!-- 4. DINASTIA -->
+<h3>A Restauração da Independência</h3>
+<p>A 1 de dezembro de 1640, um grupo de nobres portugueses organizou uma revolta contra o domínio espanhol, conseguindo recuperar a independência de Portugal.</p>
+<p>D. João, Duque de Bragança, foi aclamado rei, passando a chamar-se D. João IV.</p>
+<p>Portugal teve de defender a independência através da Guerra da Restauração, que durou de 1640 a 1668.</p>
+<p>Durante este período, ocorreram várias batalhas contra Espanha, sendo importantes as vitórias portuguesas nas Linhas de Elvas, no Ameixial, em Castelo Rodrigo e em Montes Claros.</p>
+<p>Em 1668, Espanha reconheceu finalmente a independência de Portugal através do Tratado de Lisboa.</p>
 
-<section id="dinastia4">
-<h2>4.ª Dinastia — Dinastia de Bragança</h2>
+<h2>4.ª Dinastia — Dinastia de Bragança (1640–1910)</h2>
+<p>A 4.ª Dinastia, conhecida como Dinastia de Bragança, começou em 1640, com D. João IV, e terminou em 1910, com a implantação da República.</p>
+<p>Durante esta dinastia, Portugal recuperou a independência, desenvolveu o comércio e o Império, enfrentou invasões francesas, viveu a independência do Brasil, passou por guerras civis e transformações políticas e terminou com a implantação da República.</p>
 
-<h3>Principais acontecimentos</h3>
+<h3>D. João IV (1640–1656)</h3>
+<p>D. João IV, conhecido como O Restaurador, foi o primeiro rei da Dinastia de Bragança.</p>
+<p>Era duque de Bragança e foi aclamado rei a 1 de dezembro de 1640, depois da revolta que pôs fim ao domínio filipino.</p>
+<p>O seu principal objetivo foi recuperar e defender a independência portuguesa, uma vez que Espanha não reconheceu imediatamente a nova situação política.</p>
+<p>Durante o seu reinado, começou a Guerra da Restauração, que durou de 1640 a 1668.</p>
+<p>Portugal teve de organizar o exército, reforçar as fronteiras e procurar alianças com outros países, como a Inglaterra e a França.</p>
+<p>Em 1641, foram organizadas Cortes que reconheceram D. João IV como rei e apoiaram a defesa da independência.</p>
+<p>Durante este período, os Holandeses continuaram a atacar territórios portugueses no ultramar, especialmente no Brasil e em África, provocando dificuldades económicas e militares.</p>
+<p>D. João IV morreu em 1656, sendo sucedido pelo seu filho D. Afonso VI.</p>
+
+<h3>D. Afonso VI (1656–1683)</h3>
+<p>D. Afonso VI foi filho de D. João IV e tornou-se rei de Portugal em 1656.</p>
+<p>Durante o seu reinado, a Guerra da Restauração continuou, com várias batalhas importantes contra Espanha. Portugal conseguiu importantes vitórias militares, que ajudaram a consolidar a independência.</p>
+<p>Entre as batalhas mais importantes destacam-se a Batalha das Linhas de Elvas, em 1659, a Batalha do Ameixial, em 1663, a Batalha de Castelo Rodrigo, em 1664, e a Batalha de Montes Claros, em 1665.</p>
+<p>Em 1668, durante o seu reinado, Espanha reconheceu finalmente a independência de Portugal através do Tratado de Lisboa.</p>
+<p>D. Afonso VI teve dificuldades em governar e acabou por ser afastado do poder, ficando o seu irmão, D. Pedro, como regente.</p>
+<p>D. Afonso VI morreu em 1683.</p>
+
+<h3>D. Pedro II (1683–1706)</h3>
+<p>D. Pedro II, irmão de D. Afonso VI, começou por exercer a regência e tornou-se rei em 1683, após a morte do irmão.</p>
+<p>Durante o seu reinado, Portugal procurou recuperar economicamente depois dos anos de guerra. A agricultura, o comércio e a exploração dos territórios ultramarinos tiveram um papel importante na recuperação do reino.</p>
+<p>Em 1697, foram descobertas importantes jazidas de ouro no Brasil, contribuindo para o aumento da riqueza portuguesa nos anos seguintes.</p>
+<p>Em 1703, Portugal assinou o Tratado de Methuen com Inglaterra. Este tratado estabeleceu acordos comerciais, permitindo a entrada de tecidos ingleses em Portugal e facilitando a exportação de vinhos portugueses para Inglaterra.</p>
+<p>O tratado aumentou a ligação económica entre Portugal e Inglaterra, embora também tenha contribuído para uma maior dependência dos produtos ingleses.</p>
+<p>D. Pedro II morreu em 1706, sendo sucedido pelo seu filho.</p>
+
+<h3>D. João V (1706–1750)</h3>
+<p>D. João V, conhecido como O Magnânimo, foi filho de D. Pedro II e tornou-se rei em 1706.</p>
+<p>O seu reinado ficou marcado pela grande riqueza proveniente do ouro e dos diamantes do Brasil. Essa riqueza permitiu a construção de grandes obras e o desenvolvimento da cultura e da arte.</p>
+<p>Uma das obras mais importantes do seu reinado foi o Palácio-Convento de Mafra, cuja construção começou em 1717. Este monumento tornou-se um dos símbolos do poder e da riqueza da monarquia portuguesa.</p>
+<p>D. João V também promoveu a construção de igrejas, bibliotecas e outros edifícios, apoiando a arte barroca.</p>
+<p>Durante o seu reinado, Portugal participou na Guerra da Sucessão de Espanha e reforçou as relações diplomáticas com vários países europeus.</p>
+<p>D. João V morreu em 1750, sendo sucedido pelo seu filho D. José I.</p>
+
+<h3>D. José I (1750–1777)</h3>
+<p>D. José I foi filho de D. João V e tornou-se rei em 1750. O seu reinado ficou marcado pela atuação do Marquês de Pombal, que foi um dos principais responsáveis pelas reformas políticas, económicas e sociais.</p>
+<p>O acontecimento mais marcante foi o Terramoto de 1755, que destruiu grande parte de Lisboa. O terramoto foi seguido por um tsunami e por incêndios, provocando enormes danos e muitas vítimas.</p>
+<p>O Marquês de Pombal organizou a reconstrução da cidade, criando uma nova zona urbana, conhecida como Baixa Pombalina, com ruas largas e edifícios preparados para resistir melhor a futuros sismos.</p>
+<p>Durante este período foram também realizadas várias reformas:</p>
 <ul>
-<li>Restauração da Independência em 1640.</li>
-<li>Reinado de D. João IV.</li>
-<li>Reinado de D. Pedro II.</li>
-<li>Reinado de D. João V.</li>
-<li>Terramoto de Lisboa em 1755.</li>
-<li>Reinado de D. José I.</li>
-<li>Reinado de D. Maria I.</li>
-<li>Invasões Francesas.</li>
-<li>Revolução Liberal de 1820.</li>
-<li>Guerra Civil entre liberais e absolutistas.</li>
-<li>Reinado de D. Pedro V.</li>
-<li>Reinado de D. Luís I.</li>
-<li>Reinado de D. Carlos I.</li>
-<li>Implantação da República em 1910.</li>
+<li>Reformas na educação.</li>
+<li>Modernização da administração.</li>
+<li>Desenvolvimento do comércio e da indústria.</li>
+<li>Diminuição do poder de algumas instituições religiosas.</li>
+<li>Expulsão dos Jesuítas de Portugal, em 1759.</li>
 </ul>
+<p>D. José I morreu em 1777, sendo sucedido pela sua filha D. Maria I.</p>
 
-<p>
-A 4.ª Dinastia terminou com a Implantação da República,
-a 5 de outubro de 1910.
-</p>
-</section>
+<h3>D. Maria I (1777–1816)</h3>
+<p>D. Maria I foi a primeira mulher a governar Portugal como rainha por direito próprio. Era filha de D. José I e subiu ao trono em 1777.</p>
+<p>O seu reinado começou com o afastamento do Marquês de Pombal, num período conhecido como Viradeira, que procurou alterar algumas das políticas do reinado anterior.</p>
+<p>Durante o seu reinado, Portugal enfrentou dificuldades políticas e económicas e participou em conflitos europeus.</p>
+<p>Em 1807, as tropas francesas, comandadas por Napoleão Bonaparte, invadiram Portugal. A família real portuguesa decidiu partir para o Brasil, acompanhada pela corte, para evitar ser capturada pelos Franceses.</p>
+<p>A corte chegou ao Brasil em 1808, transferindo temporariamente a sede do governo português para o Rio de Janeiro.</p>
+<p>D. Maria I morreu em 1816, no Brasil, sendo sucedida pelo seu filho D. João VI.</p>
 
-<!-- ESTADO NOVO -->
+<h3>D. João VI (1816–1826)</h3>
+<p>D. João VI tornou-se rei em 1816, depois da morte da sua mãe, D. Maria I.</p>
+<p>O seu reinado ficou marcado pelas invasões francesas, pela permanência da corte no Brasil e pelas mudanças políticas que ocorreram no início do século XIX.</p>
+<p>Em 1820, ocorreu a Revolução Liberal do Porto, que exigiu o regresso do rei a Portugal e a criação de uma Constituição.</p>
+<p>Em 1821, D. João VI regressou a Portugal, deixando o seu filho D. Pedro no Brasil.</p>
+<p>Em 1822, o Brasil declarou a independência, sendo D. Pedro proclamado imperador do Brasil.</p>
+<p>Em 1826, D. João VI morreu, deixando uma crise de sucessão que envolveu os seus filhos D. Pedro e D. Miguel.</p>
 
-<section id="estadoNovo">
-<h2>Estado Novo</h2>
+<h3>D. Pedro IV (1826)</h3>
+<p>D. Pedro IV foi filho de D. João VI e ficou conhecido também como D. Pedro I, imperador do Brasil.</p>
+<p>Após a morte de D. João VI, tornou-se rei de Portugal em 1826, mas abdicou do trono português a favor da sua filha, D. Maria II, que ainda era menor de idade.</p>
+<p>D. Pedro IV concedeu a Carta Constitucional de 1826, que estabeleceu um regime de monarquia constitucional e procurou garantir alguns direitos políticos.</p>
+<p>O seu irmão D. Miguel contestou o regime constitucional e procurou assumir o poder, dando origem a conflitos políticos e militares.</p>
+<p>D. Pedro IV desempenhou um papel importante na defesa do liberalismo e na luta contra o absolutismo.</p>
+<p>Abdicou definitivamente do trono português em favor da filha e morreu em 1834.</p>
 
-<h3>O que foi?</h3>
-<p>
-O Estado Novo foi um regime autoritário que existiu em Portugal
-entre 1933 e 1974.
-</p>
+<h3>D. Maria II (1826–1828 e 1834–1853)</h3>
+<p>D. Maria II foi filha de D. Pedro IV e tornou-se rainha de Portugal em 1826, embora o seu primeiro reinado tenha sido interrompido em 1828, quando D. Miguel tomou o poder.</p>
+<p>D. Miguel defendia a monarquia absolutista, enquanto D. Maria II era apoiada pelos liberais.</p>
+<p>Entre 1828 e 1834, Portugal viveu uma guerra civil entre absolutistas e liberais, conhecida como Guerra Civil Portuguesa.</p>
+<p>Em 1834, os liberais venceram a guerra e D. Maria II recuperou o trono.</p>
+<p>Durante o seu reinado foram realizadas várias reformas políticas e sociais, incluindo a reorganização da administração, da educação e das instituições do Estado.</p>
+<p>D. Maria II morreu em 1853, sendo sucedida pelo seu filho D. Pedro V.</p>
 
-<h3>António de Oliveira Salazar</h3>
-<p>
-Salazar foi o principal dirigente do regime. Defendia um governo
-autoritário, nacionalista e conservador.
-</p>
+<h3>D. Pedro V (1853–1861)</h3>
+<p>D. Pedro V foi filho de D. Maria II e tornou-se rei em 1853.</p>
+<p>Foi conhecido pelo seu interesse pela modernização do país e pela preocupação com as condições de vida da população.</p>
+<p>Durante o seu reinado, Portugal desenvolveu os transportes, especialmente os caminhos de ferro, e melhorou as comunicações.</p>
+<p>D. Pedro V também ficou conhecido pela sua dedicação durante epidemias de cólera e febre amarela, visitando hospitais e demonstrando preocupação com os doentes.</p>
+<p>Morreu em 1861, sendo sucedido pelo seu irmão D. Luís I.</p>
 
-<h3>Características</h3>
+<h3>D. Luís I (1861–1889)</h3>
+<p>D. Luís I foi filho de D. Maria II e tornou-se rei em 1861.</p>
+<p>O seu reinado ficou marcado pelo desenvolvimento económico, pela construção de estradas, caminhos de ferro e outras infraestruturas.</p>
+<p>Durante este período, Portugal procurou modernizar-se e desenvolver a indústria, o comércio e os transportes.</p>
+<p>Em 1884, realizou-se a Conferência de Berlim, que teve consequências importantes para a expansão colonial europeia em África e para os interesses portugueses nos territórios africanos.</p>
+<p>D. Luís I morreu em 1889, sendo sucedido pelo seu filho D. Carlos I.</p>
+
+<h3>D. Carlos I (1889–1908)</h3>
+<p>D. Carlos I foi filho de D. Luís I e tornou-se rei em 1889.</p>
+<p>O seu reinado ficou marcado por dificuldades políticas, económicas e sociais. Portugal enfrentava problemas financeiros, descontentamento popular e críticas ao funcionamento da monarquia.</p>
+<p>Em 1890, ocorreu o Ultimato Britânico, no qual Inglaterra exigiu que Portugal retirasse as suas forças de territórios africanos situados entre Angola e Moçambique.</p>
+<p>Esta situação provocou grande indignação em Portugal e enfraqueceu a imagem da monarquia.</p>
+<p>O republicanismo ganhou cada vez mais força, defendendo a substituição da monarquia por uma república.</p>
+<p>Em 1908, D. Carlos I e o seu filho, o príncipe herdeiro D. Luís Filipe, foram assassinados no Terreiro do Paço, em Lisboa, num acontecimento conhecido como Regicídio.</p>
+<p>D. Carlos I foi sucedido pelo seu filho mais novo, D. Manuel II.</p>
+
+<h3>D. Manuel II (1908–1910)</h3>
+<p>D. Manuel II foi o último rei de Portugal. Tornou-se rei em 1908, após o assassinato do seu pai, D. Carlos I, e do seu irmão, D. Luís Filipe.</p>
+<p>O seu reinado foi curto e marcado pela instabilidade política e pelo crescimento do movimento republicano.</p>
+<p>A 5 de outubro de 1910, ocorreu a Implantação da República, que pôs fim à monarquia em Portugal e terminou a Dinastia de Bragança.</p>
+<p>D. Manuel II partiu para o exílio em Inglaterra, onde viveu até à sua morte, em 1932.</p>
+
+<h3>A Implantação da República — 5 de outubro de 1910</h3>
+<p>A monarquia portuguesa terminou a 5 de outubro de 1910, quando os republicanos conseguiram derrubar o regime monárquico.</p>
+<p>Após vários anos de descontentamento político, dificuldades económicas e críticas à monarquia, foi proclamada a República Portuguesa.</p>
+<p>D. Manuel II abandonou Portugal e partiu para Inglaterra.</p>
+<p>A implantação da República marcou o fim de quase oito séculos de monarquia em Portugal e o início de um novo regime político.</p>
+
+<h3>A importância da 4.ª Dinastia</h3>
+<p>A Dinastia de Bragança foi uma das dinastias mais longas e importantes da História de Portugal.</p>
+<p>Durante este período, Portugal recuperou a independência em 1640, venceu a Guerra da Restauração, desenvolveu o seu império colonial, enfrentou invasões francesas, viveu a independência do Brasil e passou por grandes transformações políticas, económicas e sociais.</p>
+<p>A dinastia também foi marcada pela passagem da monarquia absolutista para a monarquia constitucional, pelas guerras civis entre liberais e absolutistas e pelo crescimento do movimento republicano.</p>
+<p>O seu fim, em 1910, marcou uma grande mudança na História portuguesa, com a implantação da República.</p>
+
+<h3>Cronologia da 4.ª Dinastia</h3>
 <ul>
-<li>Censura.</li>
-<li>Polícia política.</li>
-<li>Falta de liberdade de expressão.</li>
-<li>Partido único.</li>
-<li>Repressão dos opositores.</li>
-<li>Propaganda política.</li>
+<li>1640 — Restauração da Independência e aclamação de D. João IV.</li>
+<li>1640–1668 — Guerra da Restauração contra Espanha.</li>
+<li>1659 — Batalha das Linhas de Elvas.</li>
+<li>1663 — Batalha do Ameixial.</li>
+<li>1664 — Batalha de Castelo Rodrigo.</li>
+<li>1665 — Batalha de Montes Claros.</li>
+<li>1668 — Espanha reconhece a independência portuguesa através do Tratado de Lisboa.</li>
+<li>1703 — Assinatura do Tratado de Methuen com Inglaterra.</li>
+<li>1717 — Início da construção do Palácio-Convento de Mafra.</li>
+<li>1750 — Subida ao trono de D. José I.</li>
+<li>1755 — Terramoto de Lisboa.</li>
+<li>1759 — Expulsão dos Jesuítas de Portugal.</li>
+<li>1777 — Subida ao trono de D. Maria I e início da Viradeira.</li>
+<li>1807 — Primeira invasão francesa e partida da família real para o Brasil.</li>
+<li>1808 — Chegada da corte portuguesa ao Brasil.</li>
+<li>1820 — Revolução Liberal do Porto.</li>
+<li>1821 — Regresso de D. João VI a Portugal.</li>
+<li>1822 — Independência do Brasil.</li>
+<li>1826 — Morte de D. João VI e Carta Constitucional.</li>
+<li>1828–1834 — Guerra Civil Portuguesa entre liberais e absolutistas.</li>
+<li>1834 — Vitória liberal e regresso de D. Maria II ao trono.</li>
+<li>1853 — Morte de D. Maria II e subida ao trono de D. Pedro V.</li>
+<li>1861 — Subida ao trono de D. Luís I.</li>
+<li>1889 — Subida ao trono de D. Carlos I.</li>
+<li>1890 — Ultimato Britânico.</li>
+<li>1908 — Regicídio de D. Carlos I e D. Luís Filipe; subida ao trono de D. Manuel II.</li>
+<li>1910 — Implantação da República e fim da Dinastia de Bragança.</li>
 </ul>
 
-<h3>Guerra Colonial</h3>
-<p>
-Portugal participou em guerras em Angola, Moçambique e Guiné,
-entre 1961 e 1974, tentando manter os territórios coloniais.
-</p>
 </section>
 
-<!-- 25 ABRIL -->
+<section id="guerra1">
+<h2>Capítulo 5 — A Primeira Guerra Mundial (1914–1918)</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/World_War_I.jpg/800px-World_War_I.jpg" alt="Primeira Guerra Mundial">
+
+<h3>Introdução</h3>
+<p>A Primeira Guerra Mundial foi um conflito internacional que decorreu entre 1914 e 1918, envolvendo várias das principais potências mundiais. Começou na Europa, mas acabou por se estender a outros continentes. Foi uma guerra extremamente destrutiva, marcada pela utilização de novas armas, pela mobilização de milhões de soldados e por enormes perdas humanas. Portugal também participou no conflito, sobretudo em África e na frente ocidental, em França.</p>
+
+<h3>As causas da Primeira Guerra Mundial</h3>
+<p>A Primeira Guerra Mundial teve várias causas, que se foram acumulando ao longo dos anos.</p>
+
+<h3>O nacionalismo</h3>
+<p>O nacionalismo era o sentimento de orgulho e de defesa da nação, que levou vários países a querer aumentar o seu poder e território.</p>
+<p>Alguns povos também desejavam conquistar a independência ou unir-se a outros povos da mesma nacionalidade.</p>
+
+<h3>O imperialismo</h3>
+<p>As grandes potências europeias disputavam territórios em África e na Ásia, procurando obter matérias-primas, riquezas, mercados e influência política.</p>
+<p>Esta competição provocou rivalidades entre países, especialmente entre Inglaterra, França e Alemanha.</p>
+
+<h3>O militarismo</h3>
+<p>Muitos países aumentaram os seus exércitos e investiram na construção de armas, navios de guerra e outros equipamentos militares.</p>
+<p>A competição militar criou um ambiente de tensão e desconfiança.</p>
+
+<h3>As alianças militares</h3>
+<p>Antes da guerra, os países europeus formaram alianças militares, comprometendo-se a apoiar-se mutuamente em caso de conflito.</p>
+<ul>
+<li>Tríplice Aliança: Alemanha, Áustria-Hungria e Itália, embora a Itália tenha acabado por não combater ao lado destes países no início da guerra.</li>
+<li>Tríplice Entente: França, Rússia e Reino Unido.</li>
+</ul>
+<p>Estas alianças fizeram com que um conflito entre dois países pudesse envolver muitas outras nações.</p>
+
+<h3>O assassinato do arquiduque Francisco Fernando</h3>
+<p>A causa imediata da guerra foi o assassinato do arquiduque Francisco Fernando, herdeiro do trono da Áustria-Hungria, e da sua esposa, em Sarajevo, a 28 de junho de 1914.</p>
+<p>O assassinato foi cometido por um nacionalista sérvio-bósnio.</p>
+<p>A Áustria-Hungria responsabilizou a Sérvia e declarou-lhe guerra em julho de 1914.</p>
+<p>Devido às alianças militares, vários países entraram rapidamente no conflito, dando início à Primeira Guerra Mundial.</p>
+
+<h3>Os países envolvidos</h3>
+<p>A guerra dividiu-se principalmente em dois grandes blocos.</h3>
+
+<h3>Os Aliados</h3>
+<ul>
+<li>França.</li>
+<li>Reino Unido.</li>
+<li>Rússia, até 1917.</li>
+<li>Sérvia.</li>
+<li>Bélgica.</li>
+<li>Itália, a partir de 1915.</li>
+<li>Estados Unidos da América, a partir de 1917.</li>
+<li>Portugal.</li>
+</ul>
+
+<h3>As Potências Centrais</h3>
+<ul>
+<li>Alemanha.</li>
+<li>Áustria-Hungria.</li>
+<li>Império Otomano.</li>
+<li>Bulgária.</li>
+</ul>
+
+<h3>O desenvolvimento da guerra</h3>
+<p>A Primeira Guerra Mundial começou em 1914 e terminou em 1918.</p>
+<p>Inicialmente, muitos países acreditavam que o conflito seria curto, mas acabou por durar quatro anos.</p>
+<p>A guerra ficou marcada pelas trincheiras, especialmente na frente ocidental, onde os soldados viviam em condições muito difíceis.</p>
+<p>As trincheiras eram valas construídas para proteger os soldados dos ataques inimigos. A vida nas trincheiras era marcada pelo frio, pela lama, pela falta de higiene, pelas doenças e pelo medo constante.</p>
+<p>Foram utilizadas novas armas, como metralhadoras, artilharia pesada, gases tóxicos, submarinos, aviões e tanques.</p>
+<p>Estas armas tornaram os combates muito mais destrutivos.</p>
+<p>Em 1917, os Estados Unidos entraram na guerra ao lado dos Aliados, contribuindo com soldados, recursos e apoio económico.</p>
+<p>Nesse mesmo ano, a Rússia enfrentou uma revolução e acabou por abandonar a guerra.</p>
+<p>Em 1918, os Aliados conseguiram avançar e as Potências Centrais começaram a perder força.</p>
+<p>A 11 de novembro de 1918, foi assinado o armistício, que pôs fim aos combates.</p>
+
+<h3>Portugal na Primeira Guerra Mundial</h3>
+<p>Portugal participou na Primeira Guerra Mundial ao lado dos Aliados.</p>
+<p>Em 1914, ocorreram ataques e conflitos entre forças portuguesas e alemãs nos territórios africanos de Angola e Moçambique, devido às disputas territoriais e à expansão alemã.</p>
+<p>Em 1916, depois de Portugal requisitar navios alemães que se encontravam nos seus portos, a Alemanha declarou guerra a Portugal.</p>
+<p>Portugal enviou tropas para França, onde foi criado o Corpo Expedicionário Português (CEP).</p>
+<p>Os soldados portugueses combateram na frente ocidental, sobretudo na região da Flandres.</p>
+<p>Em 9 de abril de 1918, ocorreu a Batalha de La Lys, uma das batalhas mais difíceis para as forças portuguesas.</p>
+<p>O exército português sofreu grandes perdas e muitos soldados foram capturados.</p>
+<p>Portugal também enfrentou dificuldades económicas, falta de alimentos, inflação e instabilidade política durante e depois da guerra.</p>
+
+<h3>O fim da guerra e as consequências</h3>
+<p>A Primeira Guerra Mundial terminou em 1918, com a vitória dos Aliados.</p>
+<p>Em 1919, foi assinado o Tratado de Versalhes, que impôs duras condições à Alemanha.</p>
+<p>O tratado responsabilizou a Alemanha pela guerra, obrigou-a a pagar indemnizações, reduziu o seu território e limitou o seu exército.</p>
+<p>As principais consequências da guerra foram:</p>
+<ul>
+<li>Milhões de mortos e feridos.</li>
+<li>Destruição de cidades, campos e infraestruturas.</li>
+<li>Fim de vários impérios, como o Alemão, o Austro-Húngaro, o Otomano e o Russo.</li>
+<li>Alteração das fronteiras europeias.</li>
+<li>Criação da Sociedade das Nações, destinada a promover a paz.</li>
+<li>Grandes dificuldades económicas e sociais.</li>
+<li>Crescimento das tensões que contribuíram para a Segunda Guerra Mundial.</li>
+</ul>
+
+<h3>A importância da Primeira Guerra Mundial</h3>
+<p>A Primeira Guerra Mundial transformou profundamente a Europa e o mundo.</p>
+<p>O conflito provocou a queda de grandes impérios, alterou fronteiras, enfraqueceu várias economias e criou novas tensões políticas.</p>
+<p>Apesar de ter sido criado um organismo internacional para tentar evitar futuras guerras, as dificuldades económicas, o descontentamento e o ressentimento de alguns países contribuíram para o aparecimento de novos conflitos.</p>
+
+<h3>Cronologia da Primeira Guerra Mundial</h3>
+<ul>
+<li>28 de junho de 1914 — Assassinato do arquiduque Francisco Fernando, em Sarajevo.</li>
+<li>28 de julho de 1914 — Áustria-Hungria declara guerra à Sérvia.</li>
+<li>Agosto de 1914 — Início da guerra entre várias potências europeias.</li>
+<li>1914 — Conflitos entre Portugueses e Alemães em África.</li>
+<li>1915 — Itália entra na guerra ao lado dos Aliados.</li>
+<li>1916 — Portugal entra oficialmente na guerra contra a Alemanha.</li>
+<li>1917 — Estados Unidos entram na guerra.</li>
+<li>1917 — Revolução Russa e início do processo de saída da Rússia do conflito.</li>
+<li>1918 — Batalha de La Lys, a 9 de abril.</li>
+<li>11 de novembro de 1918 — Assinatura do armistício e fim dos combates.</li>
+<li>1919 — Assinatura do Tratado de Versalhes.</li>
+</ul>
+</section>
+
+<section id="guerra2">
+<h2>Capítulo 6 — A Segunda Guerra Mundial (1939–1945)</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/World_War_II.jpg/800px-World_War_II.jpg" alt="Segunda Guerra Mundial">
+
+<h3>Introdução</h3>
+<p>A Segunda Guerra Mundial foi o maior conflito militar da História, tendo ocorrido entre 1939 e 1945. Envolveu países de vários continentes e provocou milhões de mortos, enormes destruições e profundas mudanças políticas, económicas e sociais. O conflito opôs principalmente os Aliados às potências do Eixo e ficou marcado pelo Holocausto, pela utilização de armas nucleares e pelo início de uma nova ordem mundial.</p>
+
+<h3>As causas da Segunda Guerra Mundial</h3>
+<p>A Segunda Guerra Mundial teve várias causas, relacionadas com as consequências da Primeira Guerra Mundial, as crises económicas e o crescimento de regimes totalitários.</p>
+
+<h3>O Tratado de Versalhes</h3>
+<p>Após a Primeira Guerra Mundial, a Alemanha foi obrigada a aceitar o Tratado de Versalhes, assinado em 1919.</p>
+<p>Este tratado impôs duras condições à Alemanha, incluindo perdas territoriais, limitações militares e indemnizações financeiras.</p>
+<p>Muitos alemães sentiram-se humilhados e injustiçados, o que contribuiu para o crescimento do nacionalismo e do extremismo político.</p>
+
+<h3>A crise económica de 1929</h3>
+<p>Em 1929, ocorreu uma grande crise económica nos Estados Unidos, que rapidamente se espalhou por vários países.</p>
+<p>A crise provocou desemprego, pobreza, falências e dificuldades sociais.</p>
+<p>O descontentamento da população contribuiu para o crescimento de movimentos extremistas, que prometiam resolver os problemas económicos e restaurar a força dos seus países.</p>
+
+<h3>O crescimento dos regimes totalitários</h3>
+<p>Na Alemanha, Adolf Hitler e o Partido Nazi chegaram ao poder em 1933.</p>
+<p>O regime nazi defendia o nacionalismo extremo, o racismo, o antissemitismo, o militarismo e a expansão territorial.</p>
+<p>Na Itália, Benito Mussolini governava um regime fascista desde 1922.</p>
+<p>No Japão, o militarismo e a expansão territorial também aumentaram.</p>
+<p>Estes regimes procuravam aumentar o poder dos seus países através da conquista de territórios e da força militar.</p>
+
+<h3>A expansão territorial da Alemanha</h3>
+<p>A Alemanha começou a expandir-se territorialmente, desrespeitando os acordos internacionais.</p>
+<p>Em 1938, anexou a Áustria, num acontecimento conhecido como Anschluss.</p>
+<p>Nesse mesmo ano, ocupou a região dos Sudetas, na Checoslováquia, e em 1939 ocupou o restante território checoslovaco.</p>
+<p>A expansão alemã aumentou a tensão na Europa.</p>
+
+<h3>O início da guerra</h3>
+<p>A Segunda Guerra Mundial começou a 1 de setembro de 1939, quando a Alemanha invadiu a Polónia.</p>
+<p>Dois dias depois, a 3 de setembro, o Reino Unido e a França declararam guerra à Alemanha.</p>
+<p>A União Soviética também invadiu parte da Polónia, de acordo com um acordo secreto incluído no Pacto Germano-Soviético, assinado em agosto de 1939.</p>
+<p>A invasão da Polónia marcou o início oficial da Segunda Guerra Mundial.</p>
+
+<h3>Os países envolvidos</h3>
+<p>A guerra dividiu-se principalmente em dois blocos.</p>
+
+<h3>Os Aliados</h3>
+<ul>
+<li>Reino Unido.</li>
+<li>França, até à derrota de 1940 e posteriormente através das forças da França Livre.</li>
+<li>União Soviética, a partir de 1941.</li>
+<li>Estados Unidos da América, a partir de 1941.</li>
+<li>China.</li>
+<li>Outros países, incluindo Portugal, que manteve a neutralidade oficial.</li>
+</ul>
+
+<h3>As potências do Eixo</h3>
+<ul>
+<li>Alemanha Nazi.</li>
+<li>Itália Fascista.</li>
+<li>Japão.</li>
+</ul>
+
+<h3>O desenvolvimento da guerra</h3>
+
+<h3>1939–1940: As conquistas alemãs</h3>
+<p>Após invadir a Polónia, a Alemanha conquistou vários territórios europeus.</p>
+<p>Em 1940, invadiu a Dinamarca, a Noruega, a Bélgica, os Países Baixos, o Luxemburgo e a França.</p>
+<p>A França foi derrotada em junho de 1940, ficando parte do território sob ocupação alemã e outra parte sob o governo de Vichy, colaboracionista com a Alemanha.</p>
+<p>O Reino Unido continuou a resistir.</p>
+
+<h3>A Batalha de Inglaterra</h3>
+<p>Em 1940, a Alemanha tentou derrotar a força aérea britânica para preparar uma possível invasão do Reino Unido.</p>
+<p>A Batalha de Inglaterra foi um importante confronto aéreo entre a Luftwaffe alemã e a Royal Air Force britânica.</p>
+<p>A Alemanha não conseguiu conquistar o controlo do espaço aéreo britânico, e a invasão foi adiada.</p>
+
+<h3>1941: A guerra alarga-se</h3>
+<p>Em junho de 1941, a Alemanha invadiu a União Soviética, quebrando o Pacto Germano-Soviético.</p>
+<p>Esta invasão abriu uma enorme frente de guerra no Leste Europeu.</p>
+<p>Em dezembro de 1941, o Japão atacou a base naval americana de Pearl Harbor, no Havai.</p>
+<p>Este ataque levou os Estados Unidos a entrar oficialmente na guerra.</p>
+<p>O conflito passou a envolver ainda mais países e tornou-se verdadeiramente mundial.</p>
+
+<h3>1942–1943: A mudança do rumo da guerra</h3>
+<p>A partir de 1942, os Aliados começaram a conseguir importantes vitórias.</p>
+<p>Na Batalha de Stalingrado, entre 1942 e 1943, as forças soviéticas derrotaram o exército alemão, marcando um dos principais momentos de mudança do conflito na Europa.</p>
+<p>No Norte de África, os Aliados venceram a Batalha de El Alamein, em 1942, impedindo o avanço das forças do Eixo.</p>
+<p>No Pacífico, os Estados Unidos conseguiram importantes vitórias contra o Japão, incluindo a Batalha de Midway, em 1942.</p>
+
+<h3>1944: O Dia D</h3>
+<p>A 6 de junho de 1944, ocorreu o desembarque dos Aliados na Normandia, em França, conhecido como Dia D.</p>
+<p>Esta operação permitiu abrir uma nova frente de guerra na Europa Ocidental e iniciar a libertação dos territórios ocupados pela Alemanha.</p>
+<p>Os Aliados avançaram através de França e aproximaram-se da Alemanha.</p>
+
+<h3>1945: O fim da guerra na Europa</h3>
+<p>Em 1945, as forças soviéticas avançaram sobre Berlim, enquanto os Aliados ocidentais avançavam a partir do Oeste.</p>
+<p>Adolf Hitler suicidou-se em abril de 1945, quando a derrota alemã era iminente.</p>
+<p>A Alemanha rendeu-se em maio de 1945, terminando a guerra na Europa.</p>
+
+<h3>O fim da guerra no Pacífico</h3>
+<p>A guerra continuou contra o Japão.</p>
+<p>Em agosto de 1945, os Estados Unidos lançaram bombas atómicas sobre Hiroshima e Nagasaki, provocando uma enorme destruição e muitas vítimas.</p>
+<p>O Japão anunciou a rendição em agosto e assinou formalmente a rendição em setembro de 1945.</p>
+<p>A Segunda Guerra Mundial terminou oficialmente em 1945.</p>
+
+<h3>O Holocausto</h3>
+<p>O Holocausto foi a perseguição e o genocídio organizado pelos Nazis contra os Judeus da Europa.</p>
+<p>O regime nazi defendia uma ideologia racista e antissemita, que considerava os Judeus inimigos e procurava excluí-los da sociedade.</p>
+<p>Durante a guerra, milhões de Judeus foram perseguidos, deportados, presos e assassinados.</p>
+<p>Também foram perseguidos outros grupos, incluindo pessoas com deficiência, comunidades Roma e Sinti, opositores políticos, prisioneiros de guerra soviéticos e outros grupos considerados inimigos pelo regime nazi.</p>
+<p>O Holocausto é um dos acontecimentos mais trágicos e importantes da História contemporânea, sendo essencial recordar as vítimas e combater o racismo, o antissemitismo e todas as formas de discriminação.</p>
+
+<h3>Portugal na Segunda Guerra Mundial</h3>
+<p>Portugal, governado por António de Oliveira Salazar, manteve a neutralidade oficial durante a Segunda Guerra Mundial.</p>
+<p>A neutralidade permitiu que Portugal evitasse participar diretamente no conflito, embora tivesse relações comerciais e diplomáticas com vários países.</p>
+<p>Portugal era importante devido à sua localização geográfica, aos Açores e à sua ligação histórica com o Reino Unido.</p>
+<p>Em 1943, Portugal autorizou os Aliados a utilizar bases nos Açores, o que foi importante para as operações militares no Atlântico.</p>
+<p>Portugal também exportou produtos importantes durante a guerra, incluindo volfrâmio, utilizado na indústria militar.</p>
+<p>Lisboa tornou-se um importante ponto de passagem para refugiados, diplomatas, espiões e pessoas que procuravam fugir da Europa ocupada.</p>
+<p>O diplomata português Aristides de Sousa Mendes ajudou milhares de refugiados a obter vistos para escapar à perseguição nazi, apesar das ordens do governo português.</p>
+<p>A sua ação humanitária tornou-se um dos exemplos mais importantes de coragem e solidariedade durante o Holocausto.</p>
+
+<h3>O fim da guerra e as consequências</h3>
+<p>A Segunda Guerra Mundial terminou em 1945, com a derrota das potências do Eixo.</p>
+<p>As consequências foram enormes:</p>
+<ul>
+<li>Milhões de mortos e feridos.</li>
+<li>Destruição de cidades e infraestruturas.</li>
+<li>Fim dos regimes nazi e fascista na Alemanha e Itália.</li>
+<li>Derrota do Japão.</li>
+<li>Criação da Organização das Nações Unidas (ONU), em 1945.</li>
+<li>Divisão da Alemanha em zonas de ocupação.</li>
+<li>Crescimento da influência dos Estados Unidos e da União Soviética.</li>
+<li>Início da Guerra Fria.</li>
+<li>Descolonização de vários territórios na Ásia e em África.</li>
+<li>Desenvolvimento de armas nucleares.</li>
+</ul>
+
+<h3>A importância da Segunda Guerra Mundial</h3>
+<p>A Segunda Guerra Mundial mudou profundamente o mundo.</p>
+<p>O conflito demonstrou os perigos do racismo, do extremismo, do militarismo e dos regimes totalitários.</p>
+<p>Após a guerra, os países procuraram criar organizações internacionais para evitar novos conflitos e proteger os direitos humanos.</p>
+<p>A criação da ONU, em 1945, foi uma das principais consequências, com o objetivo de promover a paz, a segurança e a cooperação internacional.</p>
+
+<h3>Cronologia da Segunda Guerra Mundial</h3>
+<ul>
+<li>1933 — Adolf Hitler chega ao poder na Alemanha.</li>
+<li>1938 — Anexação da Áustria pela Alemanha.</li>
+<li>1938 — Ocupação da região dos Sudetas.</li>
+<li>1939 — Invasão alemã da Polónia, a 1 de setembro.</li>
+<li>1939 — Reino Unido e França declaram guerra à Alemanha, a 3 de setembro.</li>
+<li>1940 — Invasão alemã da França e de vários países europeus.</li>
+<li>1940 — Batalha de Inglaterra.</li>
+<li>1941 — Invasão alemã da União Soviética.</li>
+<li>1941 — Ataque japonês a Pearl Harbor e entrada dos Estados Unidos na guerra.</li>
+<li>1942 — Batalha de Midway.</li>
+<li>1942 — Batalha de El Alamein.</li>
+<li>1942–1943 — Batalha de Stalingrado.</li>
+<li>1943 — Portugal autoriza a utilização de bases nos Açores pelos Aliados.</li>
+<li>1944 — Desembarque na Normandia, Dia D.</li>
+<li>1945 — Morte de Adolf Hitler.</li>
+<li>1945 — Rendição da Alemanha.</li>
+<li>Agosto de 1945 — Bombas atómicas sobre Hiroshima e Nagasaki.</li>
+<li>Setembro de 1945 — Rendição oficial do Japão e fim da Segunda Guerra Mundial.</li>
+<li>1945 — Criação da Organização das Nações Unidas.</li>
+</ul>
+</section>
+
+<section id="estado">
+<h2>Capítulo 7 — O Estado Novo (1933–1974)</h2>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Salazar.jpg/500px-Salazar.jpg" alt="António de Oliveira Salazar">
+
+<h3>Introdução</h3>
+<p>O Estado Novo foi um regime político autoritário que existiu em Portugal entre 1933 e 1974. Foi liderado inicialmente por António de Oliveira Salazar e, mais tarde, por Marcelo Caetano.</p>
+<p>Durante este período, não existia liberdade política plena, a oposição era perseguida, a imprensa era censurada e o país era governado sem eleições livres e democráticas.</p>
+<p>O regime terminou a 25 de abril de 1974, com a Revolução dos Cravos, que restaurou a liberdade e iniciou a transição para a democracia.</p>
+
+<h3>A origem do Estado Novo</h3>
+<p>Em 28 de maio de 1926, ocorreu um golpe militar que pôs fim à Primeira República Portuguesa e instaurou uma Ditadura Militar.</p>
+<p>O país vivia uma situação de instabilidade política, económica e social, com sucessivos governos, dificuldades financeiras e conflitos.</p>
+<p>Em 1928, António de Oliveira Salazar foi nomeado Ministro das Finanças.</p>
+<p>Salazar conseguiu controlar as despesas do Estado e tornou-se uma figura cada vez mais importante na política portuguesa.</p>
+<p>Em 1932, tornou-se Presidente do Conselho de Ministros, ou seja, chefe do Governo.</p>
+<p>Em 1933, foi aprovada uma nova Constituição, que estabeleceu oficialmente o Estado Novo.</p>
+
+<h3>António de Oliveira Salazar (1933–1968)</h3>
+<p>António de Oliveira Salazar foi o principal líder do Estado Novo e governou Portugal durante grande parte do regime.</p>
+<p>O seu governo defendia a autoridade do Estado, o nacionalismo, o conservadorismo, a tradição, a religião e a ordem.</p>
+<p>O regime era autoritário, não permitindo uma verdadeira oposição política.</p>
+<p>Durante o seu governo, foram limitadas as liberdades dos cidadãos, como a liberdade de expressão, de imprensa, de reunião e de associação.</p>
+<p>Os partidos políticos que se opunham ao regime eram proibidos ou perseguidos.</p>
+<p>Salazar defendia uma sociedade organizada segundo os princípios do Estado Novo, com forte controlo político, social e económico.</p>
+
+<h3>A censura</h3>
+<p>A censura era um dos principais instrumentos utilizados pelo Estado Novo para controlar a informação.</p>
+<p>Os jornais, livros, filmes, programas de rádio, peças de teatro e outros meios de comunicação eram controlados pelas autoridades.</p>
+<p>As notícias e opiniões contrárias ao regime podiam ser proibidas.</p>
+<p>A censura impedia a divulgação de críticas ao governo, de informações sobre a oposição e de conteúdos considerados perigosos para a ideologia do Estado Novo.</p>
+<p>Os jornalistas e escritores podiam sofrer consequências se publicassem conteúdos proibidos.</p>
+<p>A censura limitava a liberdade de expressão e impedia os cidadãos de terem acesso a informação livre.</p>
+
+<h3>A polícia política</h3>
+<p>Durante o Estado Novo, existiu uma polícia política responsável por vigiar, perseguir e prender opositores ao regime.</p>
+<p>A polícia política começou por se chamar PVDE e, posteriormente, passou a chamar-se PIDE.</p>
+<p>A PIDE controlava a atividade política, investigava opositores, vigiava organizações clandestinas e prendia pessoas consideradas ameaças ao regime.</p>
+<p>Muitos opositores foram presos, interrogados, torturados ou enviados para prisões políticas.</p>
+<p>Uma das prisões mais conhecidas foi o Tarrafal, em Cabo Verde, onde estiveram presos opositores políticos.</p>
+<p>A existência da polícia política criou um clima de medo e dificultou a organização de movimentos contra o regime.</p>
+
+<h3>A Mocidade Portuguesa e a Legião Portuguesa</h3>
+<p>O Estado Novo criou organizações destinadas a promover a ideologia do regime e a controlar a sociedade.</p>
+<p>A Mocidade Portuguesa foi criada em 1936 e tinha como objetivo educar os jovens segundo os valores do Estado Novo, promovendo a disciplina, a obediência, o nacionalismo e a preparação física.</p>
+<p>A Legião Portuguesa também foi criada em 1936 e tinha como objetivo defender o regime e combater as ideias consideradas ameaças ao Estado Novo.</p>
+<p>Estas organizações contribuíram para a propaganda e para o controlo político da população.</p>
+
+<h3>A economia durante o Estado Novo</h3>
+<p>Durante o Estado Novo, Salazar procurou controlar as despesas públicas e manter a estabilidade financeira.</p>
+<p>O regime defendia uma política económica conservadora, com forte intervenção do Estado em vários setores.</p>
+<p>A agricultura continuou a ter grande importância, mas Portugal manteve um nível de desenvolvimento industrial inferior ao de muitos países europeus.</p>
+<p>A população enfrentava baixos salários, desigualdades sociais, pobreza e falta de oportunidades.</p>
+<p>Muitos portugueses emigraram, sobretudo para França, Alemanha, Luxemburgo e outros países europeus, procurando melhores condições de vida.</p>
+<p>A emigração aumentou especialmente durante as décadas de 1950 e 1960.</p>
+
+<h3>Portugal durante a Segunda Guerra Mundial</h3>
+<p>Durante a Segunda Guerra Mundial, Portugal manteve uma neutralidade oficial.</p>
+<p>Salazar procurou evitar que Portugal entrasse diretamente no conflito, protegendo o país de possíveis ataques.</p>
+<p>Portugal manteve relações comerciais com diferentes países e tornou-se importante devido à sua localização estratégica e às suas ligações diplomáticas.</p>
+<p>Em 1943, Portugal autorizou os Aliados a utilizar bases nos Açores.</p>
+<p>Lisboa também se tornou um importante ponto de passagem para refugiados que procuravam escapar à guerra e à perseguição nazi.</p>
+<p>Apesar da neutralidade, Portugal enfrentou dificuldades económicas, falta de produtos e aumento dos preços durante o conflito.</p>
+
+<h3>A oposição ao Estado Novo</h3>
+<p>Durante o Estado Novo, existiram vários movimentos de oposição, incluindo comunistas, socialistas, republicanos, democratas e outros grupos que defendiam a liberdade e a democracia.</p>
+<p>A oposição organizava manifestações, movimentos clandestinos e campanhas políticas, apesar da censura e da repressão.</p>
+<p>Em 1958, Humberto Delgado concorreu às eleições presidenciais e tornou-se uma das figuras mais importantes da oposição.</p>
+<p>A sua campanha reuniu muitos apoiantes e demonstrou o descontentamento de parte da população com o regime.</p>
+<p>No entanto, as eleições não eram verdadeiramente livres e democráticas.</p>
+<p>Humberto Delgado acabou por ser perseguido pela polícia política e foi assassinado em 1965, em Espanha, por agentes ligados à PIDE.</p>
+
+<h3>Marcelo Caetano (1968–1974)</h3>
+<p>Marcelo Caetano sucedeu a Salazar em 1968, tornando-se Presidente do Conselho de Ministros.</p>
+<p>Inicialmente, criou algumas expectativas de mudança, num período conhecido como Primavera Marcelista, durante o qual foram anunciadas algumas reformas e alterações políticas.</p>
+<p>No entanto, o regime continuou a ser autoritário, mantendo a censura, a polícia política e a falta de liberdade democrática.</p>
+<p>Durante o seu governo, continuou a Guerra Colonial, que tinha começado em 1961, em Angola, e que se alargou a Moçambique e à Guiné-Bissau.</p>
+<p>A guerra provocou grandes dificuldades económicas, aumentou o descontentamento da população e levou muitos jovens portugueses a serem enviados para combater em África.</p>
+<p>O número de pessoas que emigravam também aumentou, sobretudo para França e outros países europeus, procurando melhores condições de vida.</p>
+<p>O descontentamento entre militares, população e opositores políticos cresceu, contribuindo para o fim do regime.</p>
+<p>Marcelo Caetano foi afastado do poder a 25 de abril de 1974, durante a Revolução dos Cravos.</p>
+
+<h3>A Guerra Colonial (1961–1974)</h3>
+<p>A Guerra Colonial foi um conflito entre Portugal e os movimentos de independência das suas colónias africanas, principalmente em Angola, Moçambique e Guiné-Bissau.</p>
+<p>A guerra começou em 1961, em Angola, e estendeu-se posteriormente a outros territórios.</p>
+<p>Portugal defendia a manutenção dos territórios ultramarinos sob o seu domínio, enquanto os movimentos de libertação lutavam pela independência.</p>
+<p>A guerra teve consequências muito graves para Portugal, provocando despesas militares elevadas, perdas humanas, dificuldades económicas e grande descontentamento social.</p>
+<p>Muitos soldados portugueses foram enviados para África, e milhares de pessoas abandonaram o país, incluindo jovens que emigravam ou procuravam evitar o serviço militar.</p>
+<p>A Guerra Colonial foi uma das principais razões para o desgaste e o fim do Estado Novo.</p>
+
+<h3>O fim do Estado Novo</h3>
+<p>Ao longo dos anos, o Estado Novo foi perdendo apoio devido à falta de liberdade, à censura, às dificuldades económicas, à Guerra Colonial e ao descontentamento dos militares.</p>
+<p>O Movimento das Forças Armadas (MFA) começou a organizar um golpe militar para derrubar o regime.</p>
+<p>A 25 de abril de 1974, os militares realizaram a Revolução dos Cravos, que pôs fim ao Estado Novo.</p>
+<p>Marcelo Caetano foi afastado do poder e o regime autoritário terminou.</p>
+
+<h3>A importância do Estado Novo</h3>
+<p>O Estado Novo foi um período marcante da História de Portugal, caracterizado pela falta de liberdade política, pela censura, pela repressão dos opositores e pela Guerra Colonial.</p>
+<p>Durante este regime, Portugal permaneceu governado de forma autoritária durante mais de quatro décadas.</p>
+<p>O seu fim, em 1974, representou uma grande mudança na sociedade portuguesa, permitindo a recuperação das liberdades e o início da democracia.</p>
+</section>
 
 <section id="abril">
-<h2>25 de Abril de 1974</h2>
+<h2>Capítulo 8 — O 25 de Abril de 1974</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/25_de_Abril_de_1974.jpg/800px-25_de_Abril_de_1974.jpg" alt="Revolução de Abril">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/25_de_Abril.jpg/800px-25_de_Abril.jpg" alt="Revolução dos Cravos">
 
-<h3>Revolução dos Cravos</h3>
-<p>
-A Revolução de 25 de Abril de 1974 pôs fim ao Estado Novo.
-Foi organizada pelo Movimento das Forças Armadas.
-</p>
+<h3>Introdução</h3>
+<p>O 25 de Abril de 1974 foi uma revolução que pôs fim ao Estado Novo, um regime autoritário que governava Portugal desde 1933. A revolução foi realizada por militares do Movimento das Forças Armadas (MFA) e ficou conhecida como Revolução dos Cravos.</p>
+<p>Este acontecimento permitiu recuperar a liberdade, acabar com a censura e iniciar a construção de uma democracia em Portugal.</p>
 
-<h3>Objetivos</h3>
+<h3>As causas do 25 de Abril</h3>
+<p>O Estado Novo enfrentava um crescente descontentamento devido à falta de liberdade, à censura, à repressão política, às dificuldades económicas e à Guerra Colonial.</p>
+<p>A Guerra Colonial, iniciada em 1961, provocava grandes despesas, perdas humanas e desgaste entre os militares.</p>
+<p>Muitos jovens eram obrigados a combater em África, enquanto outros emigravam para evitar o serviço militar ou procurar melhores condições de vida.</p>
+<p>Os militares começaram a organizar-se para acabar com o regime e encontrar uma solução para a guerra.</p>
+
+<h3>O Movimento das Forças Armadas</h3>
+<p>O Movimento das Forças Armadas (MFA) foi criado por militares que estavam descontentes com o regime e com a Guerra Colonial.</p>
+<p>O movimento defendia a democratização de Portugal, o fim da guerra e a realização de eleições livres.</p>
+<p>Os militares organizaram um golpe para derrubar o governo de Marcelo Caetano.</p>
+
+<h3>O dia 25 de Abril de 1974</h3>
+<p>Na madrugada de 25 de abril de 1974, os militares do MFA iniciaram a revolução.</p>
+<p>As operações militares foram coordenadas através de sinais transmitidos pela rádio.</p>
+<p>Uma das músicas utilizadas como sinal foi «Grândola, Vila Morena», de José Afonso.</p>
+<p>Os militares ocuparam pontos estratégicos em Lisboa e noutras cidades, conseguindo derrubar o regime.</p>
+<p>Marcelo Caetano acabou por se render e foi afastado do poder.</p>
+<p>A revolução ficou conhecida como Revolução dos Cravos porque muitas pessoas ofereceram cravos aos soldados, colocando-os nos canos das espingardas e nas fardas.</p>
+
+<h3>O fim da censura e da repressão</h3>
+<p>Após a revolução, a censura foi abolida e os cidadãos passaram a poder expressar as suas opiniões livremente.</p>
+<p>Os presos políticos foram libertados e a polícia política foi dissolvida.</p>
+<p>Foram legalizados partidos políticos e sindicatos, permitindo uma maior participação política dos cidadãos.</p>
+
+<h3>A democratização de Portugal</h3>
+<p>Depois do 25 de Abril, Portugal iniciou um processo de transição para a democracia.</p>
+<p>Em 1975, realizaram-se eleições para a Assembleia Constituinte, que tinha como objetivo elaborar uma nova Constituição.</p>
+<p>Em 1976, foi aprovada a Constituição da República Portuguesa, que estabeleceu os direitos, liberdades e garantias dos cidadãos e organizou o sistema democrático.</p>
+<p>Portugal passou a ser uma democracia, com eleições livres, partidos políticos e instituições representativas.</p>
+
+<h3>O fim da Guerra Colonial</h3>
+<p>O 25 de Abril permitiu iniciar o processo de descolonização dos territórios portugueses em África.</p>
+<p>Angola, Moçambique, Guiné-Bissau, Cabo Verde e São Tomé e Príncipe tornaram-se independentes entre 1974 e 1975.</p>
+<p>O fim da Guerra Colonial foi uma das principais consequências da revolução.</p>
+
+<h3>As consequências do 25 de Abril</h3>
 <ul>
-<li>Acabar com a ditadura.</li>
-<li>Restaurar a liberdade.</li>
-<li>Estabelecer a democracia.</li>
-<li>Acabar com a Guerra Colonial.</li>
-</ul>
-
-<h3>Consequências</h3>
-<ul>
+<li>Fim do Estado Novo.</li>
 <li>Fim da censura.</li>
-<li>Liberdade de expressão.</li>
-<li>Liberdade política.</li>
-<li>Descolonização.</li>
-<li>Estabelecimento da democracia.</li>
-<li>Constituição de 1976.</li>
+<li>Libertação dos presos políticos.</li>
+<li>Fim da polícia política.</li>
+<li>Legalização dos partidos políticos.</li>
+<li>Liberdade de expressão e de reunião.</li>
+<li>Realização de eleições livres.</li>
+<li>Criação de uma Constituição democrática.</li>
+<li>Fim da Guerra Colonial.</li>
+<li>Independência das antigas colónias africanas.</li>
+<li>Maior participação dos cidadãos na vida política.</li>
+</ul>
+
+<h3>A importância do 25 de Abril</h3>
+<p>O 25 de Abril de 1974 foi um dos acontecimentos mais importantes da História de Portugal.</p>
+<p>Permitiu acabar com uma ditadura de mais de quatro décadas e recuperar a liberdade e os direitos dos cidadãos.</p>
+<p>A revolução marcou o início da democracia portuguesa e transformou profundamente a sociedade, a política e a vida das pessoas.</p>
+
+<h3>Cronologia do 25 de Abril</h3>
+<ul>
+<li>1926 — Golpe militar e início da Ditadura Militar.</li>
+<li>1933 — Constituição e início oficial do Estado Novo.</li>
+<li>1961 — Início da Guerra Colonial em Angola.</li>
+<li>1968 — Marcelo Caetano sucede a Salazar.</li>
+<li>1974 — Revolução dos Cravos, a 25 de abril.</li>
+<li>1974 — Fim do Estado Novo e início da democratização.</li>
+<li>1975 — Eleições para a Assembleia Constituinte.</li>
+<li>1975 — Independência de várias antigas colónias portuguesas.</li>
+<li>1976 — Aprovação da Constituição da República Portuguesa.</li>
 </ul>
 </section>
-
-<!-- 1 GUERRA -->
-
-<section id="ww1">
-<h2>Primeira Guerra Mundial (1914-1918)</h2>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/World_War_I.jpg/800px-World_War_I.jpg" alt="Primeira Guerra Mundial">
-
-<h3>Causes</h3>
-<ul>
-<li>Nacionalismo.</li>
-<li>Imperialismo.</li>
-<li>Militarismo.</li>
-<li>Alianças entre países.</li>
-<li>Assassinato do arquiduque Francisco Fernando.</li>
-</ul>
-
-<h3>Blocos</h3>
-<p><strong>Aliados:</strong> França, Reino Unido, Rússia e outros países.</p>
-<p><strong>Potências Centrais:</strong> Alemanha, Áustria-Hungria e outros.</p>
-
-<h3>Consequências</h3>
-<ul>
-<li>Milhões de mortos.</li>
-<li>Destruição de territórios.</li>
-<li>Fim de vários impérios.</li>
-<li>Tratado de Versalhes.</li>
-<li>Criação da Sociedade das Nações.</li>
-</ul>
-</section>
-
-<!-- 2 GUERRA -->
-
-<section id="ww2">
-<h2>Segunda Guerra Mundial (1939-1945)</h2>
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/World_War_II.jpg/800px-World_War_II.jpg" alt="Segunda Guerra Mundial">
-
-<h3>Principais causas</h3>
-<ul>
-<li>Tratado de Versalhes.</li>
-<li>Expansionismo nazi.</li>
-<li>Expansionismo fascista.</li>
-<li>Invasão da Polónia em 1939.</li>
-</ul>
-
-<h3>Aliados</h3>
-<p>Reino Unido, França, União Soviética, Estados Unidos e outros.</p>
-
-<h3>Eixo</h3>
-<p>Alemanha Nazi, Itália Fascista e Japão.</p>
-
-<h3>Holocausto</h3>
-<p>
-O Holocausto foi a perseguição e o assassinato sistemático de
-milhões de judeus pelos nazis e seus colaboradores.
-Também foram perseguidos outros grupos.
-</p>
-
-<h3>Consequências</h3>
-<ul>
-<li>Milhões de mortos.</li>
-<li>Destruição de cidades.</li>
-<li>Criação da Organização das Nações Unidas.</li>
-<li>Divisão da Alemanha.</li>
-<li>Início da Guerra Fria.</li>
-</ul>
-
-<h3>Portugal durante a guerra</h3>
-<p>
-Portugal manteve-se oficialmente neutral durante a Segunda Guerra
-Mundial, embora tenha permitido o uso de bases nos Açores pelos Aliados.
-</p>
-</section>
-
-</div>
-
-<!-- COMENTÁRIOS -->
-
-<section id="comentarios">
-<h2>Comentários</h2>
-
-<input type="text" id="nome" placeholder="O teu nome">
-<textarea id="comentario" placeholder="Escreve um comentário..." rows="4" style="width:100%"></textarea>
-
-<button onclick="adicionarComentario()">Enviar comentário</button>
-
-<div id="listaComentarios"></div>
-</section>
-
-<!-- EDITOR -->
 
 <section>
-<h2>Editar o site</h2>
-<button onclick="abrirEditor()">Entrar no modo de edição</button>
+<h2>Comentários</h2>
+<p>Deixa uma mensagem ou comentário sobre o site.</p>
+<input id="nome" placeholder="O teu nome">
+<textarea id="comentario" placeholder="Escreve o teu comentário"></textarea>
+<button onclick="adicionarComentario()">Publicar comentário</button>
+<div id="comentarios"></div>
+</section>
 
-<div id="painelEdicao">
-<h3>Editor de conteúdo</h3>
-<p>Podes editar o conteúdo completo do site abaixo.</p>
-
-<textarea id="editor"></textarea>
-
-<button onclick="guardarEdicao()">Guardar alterações</button>
-<button onclick="cancelarEdicao()">Cancelar</button>
-<button onclick="restaurarOriginal()">Restaurar versão original</button>
-</div>
+<section>
+<h2>Área de edição</h2>
+<p>Esta área permite editar o texto do site. A edição está protegida por um PIN.</p>
+<button onclick="editar()">Editar o site</button>
+<button onclick="window.print()">Imprimir / Guardar PDF</button>
 </section>
 
 </div>
+</main>
 
 <footer>
-<p>Site de História — Trabalho escolar</p>
+<p>Projeto de História — História de Portugal e do Mundo</p>
 </footer>
 
 <script>
-
-// PESQUISA
-function pesquisar() {
-    let texto = document.getElementById("pesquisa").value.toLowerCase();
-    let secoes = document.querySelectorAll("#conteudo section");
-
-    secoes.forEach(function(secao) {
-        if (secao.innerText.toLowerCase().includes(texto)) {
-            secao.style.display = "";
-        } else {
-            secao.style.display = "none";
-        }
-    });
+function pesquisar(){
+const termo=document.getElementById("search").value.toLowerCase();
+const sec=document.querySelectorAll("#conteudo section");
+sec.forEach(s=>{
+s.style.display=s.innerText.toLowerCase().includes(termo)?"":"none";
+});
 }
 
-// COMENTÁRIOS
-function adicionarComentario() {
-    let nome = document.getElementById("nome").value;
-    let comentario = document.getElementById("comentario").value;
-
-    if (nome === "" || comentario === "") {
-        alert("Preenche o nome e o comentário!");
-        return;
-    }
-
-    let comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
-
-    comentarios.push({
-        nome: nome,
-        comentario: comentario
-    });
-
-    localStorage.setItem("comentarios", JSON.stringify(comentarios));
-
-    mostrarComentarios();
-
-    document.getElementById("nome").value = "";
-    document.getElementById("comentario").value = "";
-}
-
-function mostrarComentarios() {
-    let comentarios = JSON.parse(localStorage.getItem("comentarios") || "[]");
-    let lista = document.getElementById("listaComentarios");
-
-    lista.innerHTML = "";
-
-    comentarios.forEach(function(c) {
-        let div = document.createElement("div");
-        div.className = "comentario";
-
-        let nome = document.createElement("strong");
-        nome.textContent = c.nome;
-
-        let texto = document.createElement("p");
-        texto.textContent = c.comentario;
-
-        div.appendChild(nome);
-        div.appendChild(texto);
-        lista.appendChild(div);
-    });
-}
-
+function adicionarComentario(){
+const nome=document.getElementById("nome").value.trim();
+const texto=document.getElementById("comentario").value.trim();
+if(!nome||!texto){alert("Preenche o nome e o comentário.");return;}
+const comentarios=JSON.parse(localStorage.getItem("comentarios")||"[]");
+comentarios.push({nome,texto});
+localStorage.setItem("comentarios",JSON.stringify(comentarios));
+document.getElementById("nome").value="";
+document.getElementById("comentario").value="";
 mostrarComentarios();
-
-// EDITOR COM PIN
-function abrirEditor() {
-    let pin = prompt("Introduz o PIN para editar:");
-
-    if (pin === "5580") {
-        document.getElementById("painelEdicao").style.display = "block";
-
-        let conteudo = document.getElementById("conteudo");
-
-        document.getElementById("editor").value =
-            localStorage.getItem("conteudoEditado") || conteudo.innerHTML;
-    } else {
-        alert("PIN incorreto!");
-    }
 }
 
-function guardarEdicao() {
-    let novoConteudo = document.getElementById("editor").value;
-
-    localStorage.setItem("conteudoEditado", novoConteudo);
-
-    document.getElementById("conteudo").innerHTML = novoConteudo;
-
-    alert("Alterações guardadas!");
-
-    document.getElementById("painelEdicao").style.display = "none";
+function mostrarComentarios(){
+const comentarios=JSON.parse(localStorage.getItem("comentarios")||"[]");
+document.getElementById("comentarios").innerHTML="";
+comentarios.forEach(c=>{
+const div=document.createElement("div");
+div.className="comment";
+div.textContent=c.nome+": "+c.texto;
+document.getElementById("comentarios").appendChild(div);
+});
 }
 
-function cancelarEdicao() {
-    document.getElementById("painelEdicao").style.display = "none";
+function editar(){
+const pin=prompt("Introduz o PIN:");
+if(pin!=="5580"){alert("PIN incorreto.");return;}
+const conteudo=document.getElementById("conteudo");
+const novo=prompt("Cola aqui o HTML que queres usar para substituir o conteúdo:");
+if(novo!==null){
+conteudo.innerHTML=novo;
+localStorage.setItem("conteudoEditado",novo);
+alert("Alterações guardadas neste navegador.");
+}
 }
 
-function restaurarOriginal() {
-    if (confirm("Tens a certeza que queres restaurar o conteúdo original?")) {
-        localStorage.removeItem("conteudoEditado");
-        location.reload();
-    }
+window.onload=function(){
+mostrarComentarios();
+const guardado=localStorage.getItem("conteudoEditado");
+if(guardado)document.getElementById("conteudo").innerHTML=guardado;
 }
-
-// CARREGAR ALTERAÇÕES
-window.onload = function() {
-    let editado = localStorage.getItem("conteudoEditado");
-
-    if (editado) {
-        document.getElementById("conteudo").innerHTML = editado;
-    }
-
-    mostrarComentarios();
-};
-
 </script>
 
 </body>
